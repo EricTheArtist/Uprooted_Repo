@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 7331043161936365908}
   - component: {fileID: 7331043161936365907}
   - component: {fileID: 931803188736425243}
-  m_Layer: 0
+  - component: {fileID: 8949168778897888406}
+  m_Layer: 6
   m_Name: Resource_Tree_Prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,3 +102,16 @@ MonoBehaviour:
   type: 0
   drop_prefab: {fileID: 7331043161936365906, guid: cee389c3b2ed5a14ca9a7b1d5427de0c, type: 3}
   can_mine: 0
+--- !u!65 &8949168778897888406
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7331043161936365906}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.8, y: 1.9, z: 2}
+  m_Center: {x: 0, y: 0.95, z: 0}

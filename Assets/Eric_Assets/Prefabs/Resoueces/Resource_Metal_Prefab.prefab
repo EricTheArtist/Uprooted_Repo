@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 8744540041367294405}
   - component: {fileID: 8744540041367294404}
   - component: {fileID: 4930302176088468790}
-  m_Layer: 0
+  - component: {fileID: 97541778209462277}
+  m_Layer: 6
   m_Name: Resource_Metal_Prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,3 +102,16 @@ MonoBehaviour:
   type: 0
   drop_prefab: {fileID: 8744540041367294407, guid: b4767127e1b25df46b66dc1169389d10, type: 3}
   can_mine: 0
+--- !u!65 &97541778209462277
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8744540041367294407}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9, y: 1.6, z: 2}
+  m_Center: {x: 0.050000012, y: 0.8, z: 0}

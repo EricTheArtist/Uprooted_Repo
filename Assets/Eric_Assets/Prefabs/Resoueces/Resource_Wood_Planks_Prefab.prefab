@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5877802036488486270}
   - component: {fileID: 5877802036488486271}
   - component: {fileID: 833546088115401588}
+  - component: {fileID: -7924531979073018239}
   m_Layer: 0
   m_Name: Resource_Wood_Planks_Prefab
   m_TagString: Untagged
@@ -101,3 +102,16 @@ MonoBehaviour:
   type: 0
   drop_prefab: {fileID: 7331043161936365906, guid: cee389c3b2ed5a14ca9a7b1d5427de0c, type: 3}
   can_mine: 0
+--- !u!65 &-7924531979073018239
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5877802036488486268}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 1.5, z: 1.8}
+  m_Center: {x: 0, y: 0.75, z: 0}

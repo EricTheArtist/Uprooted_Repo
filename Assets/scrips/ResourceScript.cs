@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class ResourceScript : MonoBehaviour
 {
-    public GameObject player;
+   // public GameObject player;
     public int resource_health;
-    public resource_type type;
+   /* public resource_type type;
     public enum resource_type
     {
         wood,
         metal,
         brick
-    }
+    }*/
 
     public GameObject drop_prefab;
     public bool can_mine;

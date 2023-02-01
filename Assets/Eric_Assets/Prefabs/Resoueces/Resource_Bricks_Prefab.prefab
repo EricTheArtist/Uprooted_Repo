@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 5497363952620350519}
   - component: {fileID: 5497363952620350518}
   - component: {fileID: 1654761475148590367}
-  m_Layer: 0
+  - component: {fileID: 2857232978801060406}
+  m_Layer: 6
   m_Name: Resource_Bricks_Prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,3 +102,16 @@ MonoBehaviour:
   type: 2
   drop_prefab: {fileID: 5497363952620350521, guid: 7d647a54066f9bb478a2ed4fe4916be0, type: 3}
   can_mine: 0
+--- !u!65 &2857232978801060406
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5497363952620350521}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5999999, y: 0.7, z: 1.7}
+  m_Center: {x: 0.099999994, y: 0.35, z: -0.049999982}

@@ -8,6 +8,11 @@ public class InventoryScript : MonoBehaviour
     public GameObject current_item;
     public GameObject wood_prefab, metal_prefab, brick_prefab, tire_prefab, wire_prefab;
 
+    public string wood_pickup_name;
+    public string metal_pickup_name;
+    public string brick_pickup_name;
+    public string tire_pickup_name;
+    public string wire_pickup_name;
     private void Start()
     {
         wood_count = 0;
@@ -23,60 +28,60 @@ public class InventoryScript : MonoBehaviour
 
     public void add_item(GameObject item_to_add)
     {
-        if (item_to_add.name == "Wood(Clone)")
+        if (item_to_add.name == wood_pickup_name+"(Clone)")
         {
             wood_count++;
             current_item = wood_prefab;
         }
-        if(item_to_add.name== "Metal(Clone)")
+        if(item_to_add.name== metal_pickup_name+"(Clone)")
         {
             metal_count++;
             current_item = metal_prefab;
         }
-        if (item_to_add.name == "Brick(Clone)")
+        if (item_to_add.name == brick_pickup_name+"(Clone)")
         {
             brick_count++;
             current_item = brick_prefab;
         }
-        if (item_to_add.name == "Tire(Clone)")
+        if (item_to_add.name == tire_pickup_name+"(Clone)")
         {
             tire_count++;
             current_item = tire_prefab;
         }
-        if (item_to_add.name == "Wire(Clone)")
+        if (item_to_add.name == wire_pickup_name+"(Clone)")
         {
             wire_count++;
-            current_item = metal_prefab;
+            current_item = wire_prefab;
         }
 
     }
 
     public void remove_item(GameObject item_to_remove)
     {
-        if (current_item.name == "Wood")
+        if (current_item.name == wood_pickup_name)
         {
             wood_count--;
             current_item = null;
         }
-        if (item_to_remove.name == "Metal")
+        if (item_to_remove.name == metal_pickup_name)
         {
             metal_count--;
             current_item = null;
 
         }
-        if (item_to_remove.name == "Brick")
+        if (item_to_remove.name == brick_pickup_name)
         {
             brick_count--;
             current_item = null;
 
         }
-        if (item_to_remove.name == "Tire")
+        if (item_to_remove.name == tire_pickup_name)
         {
             tire_count--;
             current_item = null;
 
         }
-        if (item_to_remove.name == "Wire")
+        if (item_to_remove.name == wire_pickup_name)
         {
             wire_count--;
             current_item = null;

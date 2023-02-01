@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5497363952620350519}
   - component: {fileID: 5497363952620350518}
   - component: {fileID: 2323647709108977546}
+  - component: {fileID: -4818607675269740738}
   m_Layer: 0
   m_Name: Pickup_Bricks_Prefab
   m_TagString: Untagged
@@ -97,3 +98,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+--- !u!65 &-4818607675269740738
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5497363952620350521}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5999999, y: 0.7, z: 1.7}
+  m_Center: {x: 0.099999994, y: 0.35, z: -0.049999982}
