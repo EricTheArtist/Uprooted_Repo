@@ -106,8 +106,8 @@ public class BuildingSystem : MonoBehaviour
         Vector3 position = SnapCoordinateToGrid(Vector3.zero);
 
         GameObject obj = Instantiate(prefab, position, Quaternion.identity);
-        objectToPlace = obj.GetComponent<PlacableObject>();
-        obj.AddComponent<ObjectDrag>();
+        //objectToPlace = obj.GetComponent<PlacableObject>();
+        //obj.AddComponent<ObjectDrag>();
     }
 
     private bool CanBePlaced(PlacableObject placableObject)
