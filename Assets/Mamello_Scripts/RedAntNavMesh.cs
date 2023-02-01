@@ -14,20 +14,16 @@ public class RedAntNavMesh : MonoBehaviour
         navMeshAgent = GetComponent<NavMeshAgent>();
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        //making RedAnt movetowards target
+        navMeshAgent.destination = moveTarget.position;
+
+       /* if (Input.GetKeyDown(KeyCode.Space))
         {
-            //making RedAnt movetowards target
-            navMeshAgent.destination = moveTarget.position;
-        }
+            
+        }*/
        
     }
 }
