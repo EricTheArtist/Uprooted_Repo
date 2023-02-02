@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3861235524361432608}
   - component: {fileID: 2731577595043915235}
   - component: {fileID: -3365121980372437920}
+  - component: {fileID: -2220450775497507255}
   m_Layer: 0
   m_Name: Pickup_Tire_Prefab
   m_TagString: Untagged
@@ -109,5 +110,18 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.70000005, y: 0.2, z: 0.70000005}
-  m_Center: {x: 0.049999997, y: 0.1, z: 0.049999997}
+  m_Size: {x: 0.8552885, y: 0.3552885, z: 0.70000005}
+  m_Center: {x: 0.050000012, y: 0.09712428, z: 0.050000012}
+--- !u!114 &-2220450775497507255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3861235524361432609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1875cf6306fa6643a033d5eb5e606f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatStrength: 0.3

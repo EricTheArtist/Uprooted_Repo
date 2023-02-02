@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7331043161936365907}
   - component: {fileID: -9116689668551604984}
   - component: {fileID: -1871209709651112838}
+  - component: {fileID: 3595770020275762195}
   m_Layer: 0
   m_Name: Pickup_Wood_Prefab
   m_TagString: Untagged
@@ -42,7 +43,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7331043161936365906}
-  m_Mesh: {fileID: -2432090755550338912, guid: e9b04017c3c6e384e83dcfac5ad179df, type: 3}
+  m_Mesh: {fileID: -2432090755550338912, guid: 2819e5f7f6f1e3d47aa07ad48c9f766a, type: 3}
 --- !u!23 &7331043161936365907
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -109,5 +110,18 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.8, y: 1.9, z: 2}
-  m_Center: {x: 0, y: 0.95, z: 0}
+  m_Size: {x: 0.43065375, y: 0.18362778, z: 2}
+  m_Center: {x: 0.037516385, y: 0.044918448, z: 0}
+--- !u!114 &3595770020275762195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7331043161936365906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1875cf6306fa6643a033d5eb5e606f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatStrength: 0.3

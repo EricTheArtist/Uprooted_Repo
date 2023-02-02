@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &5497363952620350521
+--- !u!1 &3808074554771071882
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,48 +8,47 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5497363952620350516}
-  - component: {fileID: 5497363952620350519}
-  - component: {fileID: 5497363952620350518}
-  - component: {fileID: 2323647709108977546}
-  - component: {fileID: -4818607675269740738}
+  - component: {fileID: 2729868875394266669}
+  - component: {fileID: 5550616835640481501}
+  - component: {fileID: 7530614781147281564}
+  - component: {fileID: 7595030796168681995}
   m_Layer: 0
-  m_Name: Pickup_Bricks_Prefab
+  m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5497363952620350516
+--- !u!4 &2729868875394266669
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5497363952620350521}
+  m_GameObject: {fileID: 3808074554771071882}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.281, y: 0, z: 0.527}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 5497363952620350516}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &5497363952620350519
+--- !u!33 &5550616835640481501
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5497363952620350521}
-  m_Mesh: {fileID: -2432090755550338912, guid: aaaa9434e47020349944b84aea79a21e, type: 3}
---- !u!23 &5497363952620350518
+  m_GameObject: {fileID: 3808074554771071882}
+  m_Mesh: {fileID: -2432090755550338912, guid: 3fb89a3d900f07b4a92e55383f63ffcb, type: 3}
+--- !u!23 &7530614781147281564
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5497363952620350521}
+  m_GameObject: {fileID: 3808074554771071882}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -63,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7dd21176c131fa54abb3b0a678477689, type: 2}
+  - {fileID: 2100000, guid: 34afab80005367a4c9e62f6a7f46b48e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -85,6 +84,55 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &7595030796168681995
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3808074554771071882}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: 3fb89a3d900f07b4a92e55383f63ffcb, type: 3}
+--- !u!1 &5497363952620350521
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5497363952620350516}
+  - component: {fileID: 2323647709108977546}
+  - component: {fileID: -4818607675269740738}
+  - component: {fileID: 4606851025356963805}
+  m_Layer: 0
+  m_Name: Pickup_Bricks_Prefab
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5497363952620350516
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5497363952620350521}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2729868875394266669}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2323647709108977546
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -106,8 +154,21 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5497363952620350521}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.5999999, y: 0.7, z: 1.7}
-  m_Center: {x: 0.099999994, y: 0.35, z: -0.049999982}
+  m_Size: {x: 1, y: 0.6753097, z: 1}
+  m_Center: {x: 0, y: 0.16234514, z: 0}
+--- !u!114 &4606851025356963805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5497363952620350521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1875cf6306fa6643a033d5eb5e606f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatStrength: 0.3
