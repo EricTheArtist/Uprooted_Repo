@@ -13,7 +13,7 @@ public class Workbench : MonoBehaviour
     //WorkBench Upgrades Stats
     [Header("Upgrade Stats")]
     public GameObject house_parent; //this variable also gets set during runtime when a new house is spawnd in using the BuilsingSystem script
-    public int upgrade_phase = 0;
+    public int upgrade_phase = 1;
     public bool can_upgrade = false;
     public int upgrade_wood_amount;
     public int upgrade_metal_amount;
@@ -59,20 +59,22 @@ public class Workbench : MonoBehaviour
     private void Start()
     {
         can_upgrade = false;
+        upgrade_phase = 1;
+        required_upgrade_update();
         inventory = player_model.GetComponentInParent<InventoryScript>();
         UpdateUI(); // initial setting of UI display values
     }
     private void Update()
     {
-        required_upgrade_update();
-        if (check_resources())
+        //required_upgrade_update();
+       /* if (check_resources())
         {
             can_upgrade = true;
         }
-        else { can_upgrade = false; }
+        else { can_upgrade = false; }*/
         //test case for house upgrade:
         //comment out after testing is complete
-        if (Input.GetKeyUp(KeyCode.U))
+        if (Input.GetKeyUp(KeyCode.U) && check_resources())
         {
             upgrade_house();
 
@@ -142,6 +144,7 @@ public class Workbench : MonoBehaviour
     //updates the required ammounts based on the current house phase
     void required_upgrade_update()
     {
+        Debug.Log("called on start");
         if (upgrade_phase == 1)
         {
             upgrade_wood_amount = 1;
@@ -223,7 +226,8 @@ public class Workbench : MonoBehaviour
             Debug.Log(i);
             house_parent.transform.GetChild(i).gameObject.SetActive(false);
         }
-        house_parent.transform.GetChild(upgrade_phase - 1).gameObject.SetActive(true);
+        house_parent.transform.GetChild(upgrade_phase).gameObject.SetActive(true);
+        required_upgrade_update();
     }
     //button function used to upgrade the house | changes phase and uses up resources
     void upgrade_house()

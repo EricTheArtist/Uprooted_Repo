@@ -97,9 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19c1f85d1c7d6c3419e53a0f11ee1084, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
   resource_health: 10
-  type: 0
   drop_prefab: {fileID: 8744540041367294407, guid: b4767127e1b25df46b66dc1169389d10, type: 3}
   can_mine: 0
 --- !u!65 &97541778209462277

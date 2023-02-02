@@ -13,8 +13,17 @@ public class InventoryScript : MonoBehaviour
     public string brick_pickup_name;
     public string tire_pickup_name;
     public string wire_pickup_name;
+
+    [Header("Inventory UI Icons")]
+    public GameObject wood_icon;
+    public GameObject brick_icon;
+    public GameObject metal_icon;
+    public GameObject tire_icon;
+    public GameObject wire_icon;
     private void Start()
     {
+        deactivate_icon();
+
         wood_count = 0;
         metal_count = 0;
         brick_count = 0;
@@ -32,26 +41,40 @@ public class InventoryScript : MonoBehaviour
         {
             wood_count++;
             current_item = wood_prefab;
+            deactivate_icon();
+            wood_icon.SetActive(true);
         }
         if(item_to_add.name== metal_pickup_name+"(Clone)")
         {
             metal_count++;
             current_item = metal_prefab;
+            deactivate_icon();
+            metal_icon.SetActive(true);
+
         }
         if (item_to_add.name == brick_pickup_name+"(Clone)")
         {
             brick_count++;
             current_item = brick_prefab;
+            deactivate_icon();
+            brick_icon.SetActive(true);
+
         }
         if (item_to_add.name == tire_pickup_name+"(Clone)")
         {
             tire_count++;
             current_item = tire_prefab;
+            deactivate_icon();
+            tire_icon.SetActive(true);
+
         }
         if (item_to_add.name == wire_pickup_name+"(Clone)")
         {
             wire_count++;
             current_item = wire_prefab;
+            deactivate_icon();
+            wire_icon.SetActive(true);
+
         }
 
     }
@@ -61,31 +84,46 @@ public class InventoryScript : MonoBehaviour
         if (current_item.name == wood_pickup_name)
         {
             wood_count--;
+            deactivate_icon();
             current_item = null;
         }
         if (item_to_remove.name == metal_pickup_name)
         {
             metal_count--;
+            deactivate_icon();
             current_item = null;
 
         }
         if (item_to_remove.name == brick_pickup_name)
         {
             brick_count--;
+            deactivate_icon();
             current_item = null;
 
         }
         if (item_to_remove.name == tire_pickup_name)
         {
             tire_count--;
+            deactivate_icon();
             current_item = null;
 
         }
         if (item_to_remove.name == wire_pickup_name)
         {
             wire_count--;
+            deactivate_icon();
             current_item = null;
 
         }
+    }
+    //deactivates all icon gameobjects in the inventory ui
+    void deactivate_icon()
+    {
+        wood_icon.SetActive(false);
+        metal_icon.SetActive(false);
+        brick_icon.SetActive(false);
+        tire_icon.SetActive(false);
+        wire_icon.SetActive(false);
+
     }
 }

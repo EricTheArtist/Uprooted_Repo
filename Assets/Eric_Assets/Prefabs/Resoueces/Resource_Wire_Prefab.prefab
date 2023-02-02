@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8683965631063477358}
   - component: {fileID: -1988761380047294418}
   - component: {fileID: 7197970489759041113}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Resource_Wire_Prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,9 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19c1f85d1c7d6c3419e53a0f11ee1084, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
   resource_health: 4
-  type: 0
   drop_prefab: {fileID: 8683965631063477359, guid: b15a2300944fcc448a025f1f4baa553f, type: 3}
   can_mine: 0
 --- !u!65 &7197970489759041113
