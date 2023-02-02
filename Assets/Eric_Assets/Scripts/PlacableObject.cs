@@ -59,6 +59,7 @@ public class PlacableObject : MonoBehaviour
 
     public virtual void Place()
     {
+        transform.parent = null; // detach from player
         ObjectDrag drag = gameObject.GetComponent<ObjectDrag>();
         Destroy(drag);
         Placed = true;

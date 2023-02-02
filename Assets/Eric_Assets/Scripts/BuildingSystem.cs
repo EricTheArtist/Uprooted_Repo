@@ -7,6 +7,9 @@ public class BuildingSystem : MonoBehaviour
 {
     public static BuildingSystem current;
     public GridLayout gridLayout;
+    public GameObject Player;
+    public Workbench Work_Bench;
+    public GameObject UI_ConfirmHousePos;
 
     private Grid grid;
     [SerializeField] private Tilemap MainTilemap;
@@ -24,14 +27,17 @@ public class BuildingSystem : MonoBehaviour
         current = this;
         grid = gridLayout.gameObject.GetComponent<Grid>();
     }
-
-    private void Update()
+    public void BuildNewHouse()
     {
-        if (Input.GetKeyDown(KeyCode.A))
+        InitializeWithObject(prefab1);
+    }
+    private void Update()
+    {   /*
+        if (Input.GetKeyDown(KeyCode.B))
         {
             InitializeWithObject(prefab1);
         }
-
+        */
         if (!objectToPlace)
         {
             return;
@@ -41,22 +47,23 @@ public class BuildingSystem : MonoBehaviour
         {
             objectToPlace.Rotate();
         }
-        else if (Input.GetKeyDown(KeyCode.Space))
+        else if (Input.GetKeyDown(KeyCode.B))
         {
             if (CanBePlaced(objectToPlace))
             {
                 objectToPlace.Place();
                 Vector3Int start = gridLayout.WorldToCell(objectToPlace.GetStartPosition());
                 TakeArea(start, objectToPlace.Size);
+                UI_ConfirmHousePos.SetActive(false);
             }
             else
             {
-                Destroy(objectToPlace.gameObject);
+                //Destroy(objectToPlace.gameObject);
             }
         }
         else if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Destroy(objectToPlace.gameObject);
+            //Destroy(objectToPlace.gameObject);
         }
     }
     #endregion
@@ -103,11 +110,14 @@ public class BuildingSystem : MonoBehaviour
 
     public void InitializeWithObject(GameObject prefab)
     {
-        Vector3 position = SnapCoordinateToGrid(Vector3.zero);
+        Vector3 position = SnapCoordinateToGrid(Player.transform.position); // gets nearest gri position to the player
 
-        GameObject obj = Instantiate(prefab, position, Quaternion.identity);
-        //objectToPlace = obj.GetComponent<PlacableObject>();
-        //obj.AddComponent<ObjectDrag>();
+        GameObject obj = Instantiate(prefab, position, Quaternion.identity); // spawns house at given positio
+        Work_Bench.house_parent = obj.transform.Find("House_Models").gameObject; // sets the public variable for the house parent in the workbench
+        obj.transform.parent = Player.transform; // sets the parent of the house as the player
+        objectToPlace = obj.GetComponent<PlacableObject>(); // gets regrence to placeable object script that is attached to the house prefab
+        obj.AddComponent<ObjectDrag>(); // adds the object drag script to the house prefab
+        UI_ConfirmHousePos.SetActive(true);
     }
 
     private bool CanBePlaced(PlacableObject placableObject)
@@ -139,5 +149,9 @@ public class BuildingSystem : MonoBehaviour
 
     #endregion
     // Update is called once per frame
+    private void Start()
+    {
+        UI_ConfirmHousePos.SetActive(false);
+    }
 
 }

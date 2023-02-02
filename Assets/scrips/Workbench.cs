@@ -1,17 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Workbench : MonoBehaviour
 {
     public GameObject player_model;
     InventoryScript inventory;
-
+    public BuildingSystem Building_System;
     //WorkBench Storages
     public int wood_count, metal_count, brick_count, tire_count, wire_count;
     //WorkBench Upgrades Stats
     [Header("Upgrade Stats")]
-    public GameObject house_parent;
+    public GameObject house_parent; //this variable also gets set during runtime when a new house is spawnd in using the BuilsingSystem script
     public int upgrade_phase = 0;
     public bool can_upgrade = false;
     public int upgrade_wood_amount;
@@ -27,10 +28,39 @@ public class Workbench : MonoBehaviour
     public string tire_pickup_name;
     public string wire_pickup_name;
 
+    [Header("UI Elements")]
+    public TextMeshProUGUI T_WoodStorage;
+    public TextMeshProUGUI T_MetalStorage;
+    public TextMeshProUGUI T_BrickStorage;
+    public TextMeshProUGUI T_TireStorage;
+    public TextMeshProUGUI T_WireStorage;
+
+    public TextMeshProUGUI T_WoodUpgrade;
+    public TextMeshProUGUI T_MetalUpgrade;
+    public TextMeshProUGUI T_BrickUpgrade;
+    public TextMeshProUGUI T_TireUpgrade;
+    public TextMeshProUGUI T_WireUpgrade;
+
+    // updates the UI to reflect variables of workbench
+    private void UpdateUI()
+    {
+        T_WoodStorage.text = wood_count.ToString();
+        T_MetalStorage.text = metal_count.ToString();
+        T_BrickStorage.text = brick_count.ToString();
+        T_TireStorage.text = tire_count.ToString();
+        T_WireStorage.text = wire_count.ToString();
+
+        T_WoodUpgrade.text = upgrade_wood_amount.ToString();
+        T_MetalUpgrade.text = upgrade_metal_amount.ToString();
+        T_BrickUpgrade.text = upgrade_brick_amount.ToString();
+        T_TireUpgrade.text = upgrade_tire_amount.ToString();
+        T_WireUpgrade.text = upgrade_wire_amount.ToString();
+    }
     private void Start()
     {
         can_upgrade = false;
         inventory = player_model.GetComponentInParent<InventoryScript>();
+        UpdateUI(); // initial setting of UI display values
     }
     private void Update()
     {
@@ -45,6 +75,7 @@ public class Workbench : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.U))
         {
             upgrade_house();
+
         }
     }
     //a button function used to call the upgrad function if the player can upgrade the house
@@ -69,7 +100,7 @@ public class Workbench : MonoBehaviour
                 add_item(inventory.current_item);
                 inventory.remove_item(inventory.current_item);
             }
-            
+            UpdateUI(); // refresh resouce display in UI
         }
     }
     //add the resource to the work bench
@@ -105,6 +136,8 @@ public class Workbench : MonoBehaviour
         metal_count -= upgrade_metal_amount;
         tire_count -= upgrade_tire_amount;
         wire_count -= upgrade_wire_amount;
+
+        UpdateUI(); //refreshes UI to reflect new values
     }
     //updates the required ammounts based on the current house phase
     void required_upgrade_update()
@@ -195,10 +228,19 @@ public class Workbench : MonoBehaviour
     //button function used to upgrade the house | changes phase and uses up resources
     void upgrade_house()
     {
+        //for first upgrade the house is spawned into the scene using the building system
+        if (upgrade_phase == 0)
+        {
+            Building_System.BuildNewHouse();
+        }
+        else if (upgrade_phase > 0)
+        {
+            house_prefab_active();
+        }
         remove_item();
         upgrade_phase++;
         //change house prefab
-        house_prefab_active();
+        
     }
     
 }
