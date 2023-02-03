@@ -237,6 +237,7 @@ public class Workbench : MonoBehaviour
         {
             Debug.Log("First purchase");
             Building_System.BuildNewHouse();
+            //house_prefab_active();
         }
         else if (upgrade_phase > 1)
         {
@@ -244,8 +245,10 @@ public class Workbench : MonoBehaviour
         }
         remove_item();
         upgrade_phase++;
+        required_upgrade_update();
+        UpdateUI();
         //change house prefab
-        
+
     }
     
 }
