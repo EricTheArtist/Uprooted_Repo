@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class WelcomeSceneManager : MonoBehaviour
 {
+    public AudioSource audioObject;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +18,10 @@ public class WelcomeSceneManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             Application.Quit();
+        }
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            toggleAudio();
         }
     }
 
@@ -46,5 +51,20 @@ public class WelcomeSceneManager : MonoBehaviour
     public void GameOver()
     {
         SceneManager.LoadScene(3);
+    }
+
+    public void toggleAudio()
+    {
+        
+        if (audioObject.isPlaying)
+        {
+            audioObject.Pause();
+
+        }
+        else
+        {
+            audioObject.Play();
+        }
+
     }
 }

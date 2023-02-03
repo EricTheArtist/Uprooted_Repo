@@ -11,12 +11,14 @@ public class HouseDamage : MonoBehaviour
     [SerializeField] private Transform housePosition;
 
     public bool PlayerHouse = false;
-   
+    public GameObject HPBar;
+    private float starthealth;
 
     // Start is called before the first frame update
     void Start()
     {
         housePosition = gameObject.GetComponent<Transform>();
+        starthealth = houseHealth;
     }
 
     // Update is called once per frame
@@ -44,6 +46,11 @@ public class HouseDamage : MonoBehaviour
             //referenicing DamagePopup script/class to get SetUp func
             DamagePopup damagePopupClass = damagePopupTransform.transform.GetComponent<DamagePopup>();
             damagePopupClass.SetUp(houseHealth);
+        }
+        if (PlayerHouse == true)
+        {
+            HPBar = GameObject.FindGameObjectWithTag("HPBAR");
+            HPBar.transform.localScale = new Vector3(houseHealth/starthealth,1,1);
         }
     }
 }
