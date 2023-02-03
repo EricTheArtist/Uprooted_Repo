@@ -25,7 +25,8 @@ public class RedAntNavMesh : MonoBehaviour
     {
         GameObject temphouse = GameObject.FindWithTag("HousePrefab");
         moveTarget = temphouse.GetComponent<Transform>();
-      /* taggedHouses  = GameObject.FindGameObjectsWithTag("HousePrefab");*/
+        /* taggedHouses  = GameObject.FindGameObjectsWithTag("HousePrefab");*/
+        navMeshAgent.destination = moveTarget.position;
 
     }
 

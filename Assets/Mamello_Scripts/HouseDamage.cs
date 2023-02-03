@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HouseDamage : MonoBehaviour
 {
@@ -13,7 +14,7 @@ public class HouseDamage : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        housePosition = gameObject.GetComponent<Transform>();
     }
 
     // Update is called once per frame
@@ -22,6 +23,8 @@ public class HouseDamage : MonoBehaviour
         if (houseHealth <= 0)
         {
             Destroy(gameObject);
+            SceneManager.LoadScene(3);
+
         }
     }
 

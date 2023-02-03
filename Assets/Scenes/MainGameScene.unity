@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 552daa47c2c21c84b833e831a25c602a, type: 2}
 --- !u!1 &1007663
 GameObject:
   m_ObjectHideFlags: 0
@@ -303,6 +303,10 @@ PrefabInstance:
     - target: {fileID: 3861235524361432609, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
       propertyPath: m_Name
       value: Resource_Tires_Prefab (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3861235524361432609, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3861235524361432622, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
       propertyPath: m_RootOrder
@@ -542,6 +546,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Tree_Prefab (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 7331043161936365906, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7331043161936365909, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
       propertyPath: m_RootOrder
       value: 169
@@ -656,6 +664,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Wire_Prefab (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8683965631063477359, guid: da9b146353d35ea4f97a862b1c2a0acb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da9b146353d35ea4f97a862b1c2a0acb, type: 3}
 --- !u!4 &42362824 stripped
@@ -698,7 +710,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 54, y: -56.1}
+  m_AnchoredPosition: {x: 59.500015, y: -56.1}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &46388779
@@ -748,8 +760,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -857,6 +869,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Bricks_Prefab (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
 --- !u!4 &54475480 stripped
@@ -933,7 +949,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 58691081}
-  m_LocalRotation: {x: 0.16848373, y: -0.80328095, z: 0.26836324, w: 0.5043156}
+  m_LocalRotation: {x: 0.16848372, y: -0.80328095, z: 0.2683632, w: 0.5043156}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1000,6 +1016,10 @@ PrefabInstance:
     - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
       propertyPath: m_Name
       value: Resource_Bricks_Prefab (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
@@ -1079,6 +1099,10 @@ PrefabInstance:
     - target: {fileID: 3861235524361432609, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
       propertyPath: m_Name
       value: Resource_Tires_Prefab (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3861235524361432609, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3861235524361432622, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
       propertyPath: m_RootOrder
@@ -1190,6 +1214,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Bricks_Prefab (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
 --- !u!4 &75294230 stripped
@@ -1255,6 +1283,10 @@ PrefabInstance:
     - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
       propertyPath: m_Name
       value: Resource_Bricks_Prefab (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
@@ -1698,6 +1730,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Tires_Prefab (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 3861235524361432609, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3861235524361432622, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -1807,6 +1843,10 @@ PrefabInstance:
     - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
       propertyPath: m_Name
       value: Resource_Bricks_Prefab (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
@@ -2578,6 +2618,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Tree_Prefab (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7331043161936365906, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7331043161936365909, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
       propertyPath: m_RootOrder
       value: 126
@@ -2647,6 +2691,10 @@ PrefabInstance:
     - target: {fileID: 3861235524361432609, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
       propertyPath: m_Name
       value: Resource_Tires_Prefab (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3861235524361432609, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3861235524361432622, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
       propertyPath: m_RootOrder
@@ -3083,6 +3131,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Wood_Planks_Prefab (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 5877802036488486268, guid: 8e89119e649f28f41b788a38086a83ed, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e89119e649f28f41b788a38086a83ed, type: 3}
 --- !u!4 &188018901 stripped
@@ -3222,6 +3274,10 @@ PrefabInstance:
     - target: {fileID: 3861235524361432609, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
       propertyPath: m_Name
       value: Resource_Tires_Prefab (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3861235524361432609, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3861235524361432622, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
       propertyPath: m_RootOrder
@@ -3532,6 +3588,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Tree_Prefab (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 7331043161936365906, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7331043161936365909, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
       propertyPath: m_RootOrder
       value: 156
@@ -3745,6 +3805,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Bricks_Prefab (44)
       objectReference: {fileID: 0}
+    - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
 --- !u!4 &245338589 stripped
@@ -3810,6 +3874,10 @@ PrefabInstance:
     - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
       propertyPath: m_Name
       value: Resource_Bricks_Prefab (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
@@ -3960,6 +4028,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Bricks_Prefab (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
 --- !u!4 &260629648 stripped
@@ -3981,6 +4053,10 @@ PrefabInstance:
     - target: {fileID: 3861235524361432609, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
       propertyPath: m_Name
       value: Resource_Tires_Prefab (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3861235524361432609, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3861235524361432622, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
       propertyPath: m_RootOrder
@@ -4047,6 +4123,10 @@ PrefabInstance:
     - target: {fileID: 3861235524361432609, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
       propertyPath: m_Name
       value: Resource_Tires_Prefab (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3861235524361432609, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3861235524361432622, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
       propertyPath: m_RootOrder
@@ -4241,6 +4321,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Bricks_Prefab (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
 --- !u!4 &268691300 stripped
@@ -4262,6 +4346,10 @@ PrefabInstance:
     - target: {fileID: 3861235524361432609, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
       propertyPath: m_Name
       value: Resource_Tires_Prefab (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3861235524361432609, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3861235524361432622, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
       propertyPath: m_RootOrder
@@ -4465,6 +4553,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Tree_Prefab (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 7331043161936365906, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7331043161936365909, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
       propertyPath: m_RootOrder
       value: 119
@@ -4630,6 +4722,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Tires_Prefab (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 3861235524361432609, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3861235524361432622, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
       propertyPath: m_RootOrder
       value: 51
@@ -4691,6 +4787,10 @@ PrefabInstance:
     - target: {fileID: 7331043161936365906, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
       propertyPath: m_Name
       value: Resource_Tree_Prefab (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7331043161936365906, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7331043161936365909, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
       propertyPath: m_RootOrder
@@ -5055,6 +5155,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Bricks_Prefab (48)
       objectReference: {fileID: 0}
+    - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
 --- !u!4 &308946655 stripped
@@ -5175,7 +5279,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 35, y: -3.2}
+  m_AnchoredPosition: {x: 38.399967, y: -3.2}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &329875691
@@ -5225,8 +5329,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -5285,6 +5389,10 @@ PrefabInstance:
     - target: {fileID: 7331043161936365906, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
       propertyPath: m_Name
       value: Resource_Tree_Prefab (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7331043161936365906, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7331043161936365909, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
       propertyPath: m_RootOrder
@@ -5439,6 +5547,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Metal_Prefab (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 8744540041367294407, guid: e379ae3755eeef145b362b379ef07b4e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8744540041367294426, guid: e379ae3755eeef145b362b379ef07b4e, type: 3}
       propertyPath: m_RootOrder
       value: 143
@@ -5500,6 +5612,10 @@ PrefabInstance:
     - target: {fileID: 7331043161936365906, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
       propertyPath: m_Name
       value: Resource_Tree_Prefab (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7331043161936365906, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7331043161936365909, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
       propertyPath: m_RootOrder
@@ -5567,28 +5683,14 @@ GameObject:
   - component: {fileID: 341421207}
   - component: {fileID: 341421206}
   - component: {fileID: 341421205}
-  - component: {fileID: 341421204}
+  - component: {fileID: 341421208}
   m_Layer: 3
   m_Name: ground
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
---- !u!64 &341421204
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 341421203}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &341421205
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5654,6 +5756,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &341421208
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 341421203}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 0.039514218, z: 10}
+  m_Center: {x: 0, y: -0.019757109, z: 0}
 --- !u!1 &344129101
 GameObject:
   m_ObjectHideFlags: 0
@@ -5751,6 +5866,10 @@ PrefabInstance:
     - target: {fileID: 3861235524361432609, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
       propertyPath: m_Name
       value: Resource_Tires_Prefab (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3861235524361432609, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3861235524361432622, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
       propertyPath: m_RootOrder
@@ -5896,6 +6015,10 @@ PrefabInstance:
     - target: {fileID: 7331043161936365906, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
       propertyPath: m_Name
       value: Resource_Tree_Prefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 7331043161936365906, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7331043161936365909, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
       propertyPath: m_RootOrder
@@ -6172,6 +6295,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Bricks_Prefab (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
 --- !u!4 &381523499 stripped
@@ -6320,6 +6447,10 @@ PrefabInstance:
     - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
       propertyPath: m_Name
       value: Resource_Bricks_Prefab (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
@@ -6601,11 +6732,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player_model: {fileID: 624112731}
   Building_System: {fileID: 1899194327}
-  wood_count: 0
-  metal_count: 0
-  brick_count: 0
-  tire_count: 0
-  wire_count: 0
+  wood_count: 30
+  metal_count: 30
+  brick_count: 30
+  tire_count: 30
+  wire_count: 30
   house_parent: {fileID: 0}
   upgrade_phase: 0
   can_upgrade: 0
@@ -6771,6 +6902,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Bricks_Prefab (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
 --- !u!4 &416639256 stripped
@@ -6792,6 +6927,10 @@ PrefabInstance:
     - target: {fileID: 3861235524361432609, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
       propertyPath: m_Name
       value: Resource_Tires_Prefab (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3861235524361432609, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3861235524361432622, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
       propertyPath: m_RootOrder
@@ -6902,6 +7041,10 @@ PrefabInstance:
     - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
       propertyPath: m_Name
       value: Resource_Bricks_Prefab (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
@@ -7180,6 +7323,10 @@ PrefabInstance:
     - target: {fileID: 3861235524361432609, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
       propertyPath: m_Name
       value: Resource_Tires_Prefab (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3861235524361432609, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3861235524361432622, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
       propertyPath: m_RootOrder
@@ -7765,7 +7912,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 52.6, y: -9.6}
+  m_AnchoredPosition: {x: 47.7, y: -9.6}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &469460074
@@ -7815,8 +7962,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -7879,6 +8026,10 @@ PrefabInstance:
     - target: {fileID: 3861235524361432609, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
       propertyPath: m_Name
       value: Resource_Tires_Prefab (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3861235524361432609, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3861235524361432622, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
       propertyPath: m_RootOrder
@@ -8249,6 +8400,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Bricks_Prefab (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
 --- !u!4 &495950325 stripped
@@ -8266,6 +8421,10 @@ PrefabInstance:
     - target: {fileID: 7331043161936365906, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
       propertyPath: m_Name
       value: Resource_Tree_Prefab (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7331043161936365906, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7331043161936365909, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
       propertyPath: m_RootOrder
@@ -8380,6 +8539,10 @@ PrefabInstance:
     - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
       propertyPath: m_Name
       value: Resource_Bricks_Prefab (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
@@ -8652,6 +8815,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Metal_Prefab (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8744540041367294407, guid: e379ae3755eeef145b362b379ef07b4e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8744540041367294426, guid: e379ae3755eeef145b362b379ef07b4e, type: 3}
       propertyPath: m_RootOrder
       value: 87
@@ -8762,6 +8929,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Bricks_Prefab (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
 --- !u!4 &542578844 stripped
@@ -8779,6 +8950,10 @@ PrefabInstance:
     - target: {fileID: 7331043161936365906, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
       propertyPath: m_Name
       value: Resource_Tree_Prefab (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7331043161936365906, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7331043161936365909, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
       propertyPath: m_RootOrder
@@ -9018,6 +9193,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Tree_Prefab (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 7331043161936365906, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7331043161936365909, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
       propertyPath: m_RootOrder
       value: 110
@@ -9253,6 +9432,10 @@ PrefabInstance:
     - target: {fileID: 3861235524361432609, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
       propertyPath: m_Name
       value: Resource_Tires_Prefab (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3861235524361432609, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3861235524361432622, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
       propertyPath: m_RootOrder
@@ -9592,6 +9775,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Wire_Prefab (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8683965631063477359, guid: da9b146353d35ea4f97a862b1c2a0acb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da9b146353d35ea4f97a862b1c2a0acb, type: 3}
 --- !u!4 &605812832 stripped
@@ -9613,6 +9800,10 @@ PrefabInstance:
     - target: {fileID: 8744540041367294407, guid: e379ae3755eeef145b362b379ef07b4e, type: 3}
       propertyPath: m_Name
       value: Resource_Metal_Prefab (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8744540041367294407, guid: e379ae3755eeef145b362b379ef07b4e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8744540041367294426, guid: e379ae3755eeef145b362b379ef07b4e, type: 3}
       propertyPath: m_RootOrder
@@ -9724,6 +9915,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Wood_Planks_Prefab (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 5877802036488486268, guid: 8e89119e649f28f41b788a38086a83ed, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e89119e649f28f41b788a38086a83ed, type: 3}
 --- !u!4 &607366026 stripped
@@ -9828,6 +10023,10 @@ PrefabInstance:
     - target: {fileID: 8744540041367294407, guid: e379ae3755eeef145b362b379ef07b4e, type: 3}
       propertyPath: m_Name
       value: Resource_Metal_Prefab (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8744540041367294407, guid: e379ae3755eeef145b362b379ef07b4e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8744540041367294426, guid: e379ae3755eeef145b362b379ef07b4e, type: 3}
       propertyPath: m_RootOrder
@@ -10117,6 +10316,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Bricks_Prefab (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
 --- !u!4 &625592719 stripped
@@ -10134,6 +10337,10 @@ PrefabInstance:
     - target: {fileID: 7331043161936365906, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
       propertyPath: m_Name
       value: Resource_Tree_Prefab (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7331043161936365906, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7331043161936365909, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
       propertyPath: m_RootOrder
@@ -10216,6 +10423,10 @@ PrefabInstance:
     - target: {fileID: 7331043161936365906, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
       propertyPath: m_Name
       value: Resource_Tree_Prefab (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7331043161936365906, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7331043161936365909, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
       propertyPath: m_RootOrder
@@ -10497,6 +10708,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Wire_Prefab (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 8683965631063477359, guid: da9b146353d35ea4f97a862b1c2a0acb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da9b146353d35ea4f97a862b1c2a0acb, type: 3}
 --- !u!4 &653241058 stripped
@@ -10606,6 +10821,10 @@ PrefabInstance:
     - target: {fileID: 3861235524361432609, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
       propertyPath: m_Name
       value: Resource_Tires_Prefab (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3861235524361432609, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3861235524361432622, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
       propertyPath: m_RootOrder
@@ -10794,6 +11013,10 @@ PrefabInstance:
     - target: {fileID: 5877802036488486268, guid: 8e89119e649f28f41b788a38086a83ed, type: 3}
       propertyPath: m_Name
       value: Resource_Wood_Planks_Prefab (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5877802036488486268, guid: 8e89119e649f28f41b788a38086a83ed, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e89119e649f28f41b788a38086a83ed, type: 3}
@@ -11027,6 +11250,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Bricks_Prefab (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
 --- !u!4 &676684013 stripped
@@ -11092,6 +11319,10 @@ PrefabInstance:
     - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
       propertyPath: m_Name
       value: Resource_Bricks_Prefab (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
@@ -11242,6 +11473,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Wire_Prefab (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 8683965631063477359, guid: da9b146353d35ea4f97a862b1c2a0acb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da9b146353d35ea4f97a862b1c2a0acb, type: 3}
 --- !u!4 &684353478 stripped
@@ -11307,6 +11542,10 @@ PrefabInstance:
     - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
       propertyPath: m_Name
       value: Resource_Bricks_Prefab (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
@@ -11659,6 +11898,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Tree_Prefab (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7331043161936365906, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7331043161936365909, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -11856,6 +12099,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Bricks_Prefab (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
 --- !u!4 &710608656 stripped
@@ -11873,6 +12120,10 @@ PrefabInstance:
     - target: {fileID: 7331043161936365906, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
       propertyPath: m_Name
       value: Resource_Tree_Prefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 7331043161936365906, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7331043161936365909, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
       propertyPath: m_RootOrder
@@ -12026,6 +12277,10 @@ PrefabInstance:
     - target: {fileID: 8744540041367294407, guid: e379ae3755eeef145b362b379ef07b4e, type: 3}
       propertyPath: m_Name
       value: Resource_Metal_Prefab (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8744540041367294407, guid: e379ae3755eeef145b362b379ef07b4e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8744540041367294426, guid: e379ae3755eeef145b362b379ef07b4e, type: 3}
       propertyPath: m_RootOrder
@@ -12219,6 +12474,10 @@ PrefabInstance:
     - target: {fileID: 8683965631063477359, guid: da9b146353d35ea4f97a862b1c2a0acb, type: 3}
       propertyPath: m_Name
       value: Resource_Wire_Prefab (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683965631063477359, guid: da9b146353d35ea4f97a862b1c2a0acb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da9b146353d35ea4f97a862b1c2a0acb, type: 3}
@@ -12450,6 +12709,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Bricks_Prefab (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
 --- !u!4 &748203904 stripped
@@ -12546,6 +12809,10 @@ PrefabInstance:
     - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
       propertyPath: m_Name
       value: Resource_Bricks_Prefab (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
@@ -12836,6 +13103,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Wire_Prefab (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8683965631063477359, guid: da9b146353d35ea4f97a862b1c2a0acb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da9b146353d35ea4f97a862b1c2a0acb, type: 3}
 --- !u!4 &796930636 stripped
@@ -12977,6 +13248,10 @@ PrefabInstance:
     - target: {fileID: 8683965631063477359, guid: da9b146353d35ea4f97a862b1c2a0acb, type: 3}
       propertyPath: m_Name
       value: Resource_Wire_Prefab (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683965631063477359, guid: da9b146353d35ea4f97a862b1c2a0acb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da9b146353d35ea4f97a862b1c2a0acb, type: 3}
@@ -14245,6 +14520,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Tires_Prefab (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 3861235524361432609, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3861235524361432622, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
       propertyPath: m_RootOrder
       value: 44
@@ -14477,6 +14756,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Metal_Prefab (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 8744540041367294407, guid: e379ae3755eeef145b362b379ef07b4e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8744540041367294426, guid: e379ae3755eeef145b362b379ef07b4e, type: 3}
       propertyPath: m_RootOrder
       value: 141
@@ -14705,6 +14988,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Tree_Prefab (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 7331043161936365906, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7331043161936365909, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
       propertyPath: m_RootOrder
       value: 122
@@ -14818,6 +15105,10 @@ PrefabInstance:
     - target: {fileID: 8683965631063477359, guid: da9b146353d35ea4f97a862b1c2a0acb, type: 3}
       propertyPath: m_Name
       value: Resource_Wire_Prefab (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683965631063477359, guid: da9b146353d35ea4f97a862b1c2a0acb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da9b146353d35ea4f97a862b1c2a0acb, type: 3}
@@ -14962,6 +15253,10 @@ PrefabInstance:
     - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
       propertyPath: m_Name
       value: Resource_Bricks_Prefab (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
@@ -15410,6 +15705,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Wire_Prefab (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 8683965631063477359, guid: da9b146353d35ea4f97a862b1c2a0acb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da9b146353d35ea4f97a862b1c2a0acb, type: 3}
 --- !u!4 &947853192 stripped
@@ -15676,6 +15975,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Metal_Prefab (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 8744540041367294407, guid: e379ae3755eeef145b362b379ef07b4e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8744540041367294426, guid: e379ae3755eeef145b362b379ef07b4e, type: 3}
       propertyPath: m_RootOrder
       value: 142
@@ -15869,6 +16172,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Bricks_Prefab (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
 --- !u!4 &969363100 stripped
@@ -15935,6 +16242,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Bricks_Prefab (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
 --- !u!4 &976344605 stripped
@@ -15956,6 +16267,10 @@ PrefabInstance:
     - target: {fileID: 3861235524361432609, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
       propertyPath: m_Name
       value: Resource_Tires_Prefab (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3861235524361432609, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3861235524361432622, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
       propertyPath: m_RootOrder
@@ -16202,7 +16517,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 54, y: -3.2}
+  m_AnchoredPosition: {x: 59.5, y: -3.2}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1016123646
@@ -16252,8 +16567,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -16360,6 +16675,10 @@ PrefabInstance:
     - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
       propertyPath: m_Name
       value: Resource_Bricks_Prefab (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
@@ -16798,6 +17117,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Metal_Prefab
       objectReference: {fileID: 0}
+    - target: {fileID: 8744540041367294407, guid: e379ae3755eeef145b362b379ef07b4e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8744540041367294426, guid: e379ae3755eeef145b362b379ef07b4e, type: 3}
       propertyPath: m_RootOrder
       value: 131
@@ -17097,7 +17420,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 50.999924, y: -56.1}
+  m_AnchoredPosition: {x: 47.699924, y: -56.1}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1075269062
@@ -17147,8 +17470,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -17207,6 +17530,10 @@ PrefabInstance:
     - target: {fileID: 7331043161936365906, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
       propertyPath: m_Name
       value: Resource_Tree_Prefab (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7331043161936365906, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7331043161936365909, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
       propertyPath: m_RootOrder
@@ -17404,6 +17731,10 @@ PrefabInstance:
     - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
       propertyPath: m_Name
       value: Resource_Bricks_Prefab (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
@@ -17953,6 +18284,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Bricks_Prefab (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
 --- !u!4 &1112076842 stripped
@@ -18478,6 +18813,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Metal_Prefab
       objectReference: {fileID: 0}
+    - target: {fileID: 8744540041367294407, guid: e379ae3755eeef145b362b379ef07b4e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8744540041367294426, guid: e379ae3755eeef145b362b379ef07b4e, type: 3}
       propertyPath: m_RootOrder
       value: 94
@@ -18587,6 +18926,10 @@ PrefabInstance:
     - target: {fileID: 8683965631063477359, guid: da9b146353d35ea4f97a862b1c2a0acb, type: 3}
       propertyPath: m_Name
       value: Resource_Wire_Prefab (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683965631063477359, guid: da9b146353d35ea4f97a862b1c2a0acb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da9b146353d35ea4f97a862b1c2a0acb, type: 3}
@@ -18736,6 +19079,10 @@ PrefabInstance:
     - target: {fileID: 5877802036488486268, guid: 8e89119e649f28f41b788a38086a83ed, type: 3}
       propertyPath: m_Name
       value: Resource_Wood_Planks_Prefab (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5877802036488486268, guid: 8e89119e649f28f41b788a38086a83ed, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e89119e649f28f41b788a38086a83ed, type: 3}
@@ -18919,6 +19266,10 @@ PrefabInstance:
     - target: {fileID: 8744540041367294407, guid: e379ae3755eeef145b362b379ef07b4e, type: 3}
       propertyPath: m_Name
       value: Resource_Metal_Prefab (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8744540041367294407, guid: e379ae3755eeef145b362b379ef07b4e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8744540041367294426, guid: e379ae3755eeef145b362b379ef07b4e, type: 3}
       propertyPath: m_RootOrder
@@ -19165,7 +19516,7 @@ Transform:
   - {fileID: 308946655}
   - {fileID: 25984429}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1152780962
 GameObject:
@@ -19392,6 +19743,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Bricks_Prefab (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
 --- !u!4 &1156222898 stripped
@@ -19617,6 +19972,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Bricks_Prefab (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
 --- !u!4 &1162126981 stripped
@@ -19717,6 +20076,10 @@ PrefabInstance:
     - target: {fileID: 7331043161936365906, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
       propertyPath: m_Name
       value: Resource_Tree_Prefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 7331043161936365906, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7331043161936365909, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
       propertyPath: m_RootOrder
@@ -19871,6 +20234,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Metal_Prefab (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8744540041367294407, guid: e379ae3755eeef145b362b379ef07b4e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8744540041367294426, guid: e379ae3755eeef145b362b379ef07b4e, type: 3}
       propertyPath: m_RootOrder
       value: 39
@@ -20011,6 +20378,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Tree_Prefab (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 7331043161936365906, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7331043161936365909, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
       propertyPath: m_RootOrder
       value: 116
@@ -20124,6 +20495,10 @@ PrefabInstance:
     - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
       propertyPath: m_Name
       value: Resource_Bricks_Prefab (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
@@ -20274,6 +20649,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Wood_Planks_Prefab
       objectReference: {fileID: 0}
+    - target: {fileID: 5877802036488486268, guid: 8e89119e649f28f41b788a38086a83ed, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e89119e649f28f41b788a38086a83ed, type: 3}
 --- !u!4 &1194409673 stripped
@@ -20291,6 +20670,10 @@ PrefabInstance:
     - target: {fileID: 7331043161936365906, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
       propertyPath: m_Name
       value: Resource_Tree_Prefab (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7331043161936365906, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7331043161936365909, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
       propertyPath: m_RootOrder
@@ -20406,6 +20789,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Bricks_Prefab (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
 --- !u!4 &1204466071 stripped
@@ -20507,6 +20894,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Tree_Prefab (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 7331043161936365906, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7331043161936365909, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
       propertyPath: m_RootOrder
       value: 111
@@ -20576,6 +20967,10 @@ PrefabInstance:
     - target: {fileID: 3861235524361432609, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
       propertyPath: m_Name
       value: Resource_Tires_Prefab (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3861235524361432609, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3861235524361432622, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
       propertyPath: m_RootOrder
@@ -20892,6 +21287,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Tires_Prefab (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 3861235524361432609, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3861235524361432622, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -21094,6 +21493,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Tree_Prefab (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 7331043161936365906, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7331043161936365909, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
       propertyPath: m_RootOrder
       value: 148
@@ -21207,6 +21610,10 @@ PrefabInstance:
     - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
       propertyPath: m_Name
       value: Resource_Bricks_Prefab (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
@@ -21350,6 +21757,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Wood_Planks_Prefab (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5877802036488486268, guid: 8e89119e649f28f41b788a38086a83ed, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e89119e649f28f41b788a38086a83ed, type: 3}
 --- !u!4 &1237975159 stripped
@@ -21415,6 +21826,10 @@ PrefabInstance:
     - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
       propertyPath: m_Name
       value: Resource_Bricks_Prefab (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
@@ -21482,6 +21897,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Wood_Planks_Prefab (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5877802036488486268, guid: 8e89119e649f28f41b788a38086a83ed, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e89119e649f28f41b788a38086a83ed, type: 3}
 --- !u!4 &1243302820 stripped
@@ -21503,6 +21922,10 @@ PrefabInstance:
     - target: {fileID: 3861235524361432609, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
       propertyPath: m_Name
       value: Resource_Tires_Prefab (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3861235524361432609, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3861235524361432622, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
       propertyPath: m_RootOrder
@@ -22103,6 +22526,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Wood_Planks_Prefab (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5877802036488486268, guid: 8e89119e649f28f41b788a38086a83ed, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e89119e649f28f41b788a38086a83ed, type: 3}
 --- !u!4 &1263854352 stripped
@@ -22124,6 +22551,10 @@ PrefabInstance:
     - target: {fileID: 8744540041367294407, guid: e379ae3755eeef145b362b379ef07b4e, type: 3}
       propertyPath: m_Name
       value: Resource_Metal_Prefab (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8744540041367294407, guid: e379ae3755eeef145b362b379ef07b4e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8744540041367294426, guid: e379ae3755eeef145b362b379ef07b4e, type: 3}
       propertyPath: m_RootOrder
@@ -22357,6 +22788,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Metal_Prefab (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 8744540041367294407, guid: e379ae3755eeef145b362b379ef07b4e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8744540041367294426, guid: e379ae3755eeef145b362b379ef07b4e, type: 3}
       propertyPath: m_RootOrder
       value: 145
@@ -22501,6 +22936,10 @@ PrefabInstance:
     - target: {fileID: 7331043161936365906, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
       propertyPath: m_Name
       value: Resource_Tree_Prefab (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7331043161936365906, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7331043161936365909, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
       propertyPath: m_RootOrder
@@ -22691,6 +23130,10 @@ PrefabInstance:
     - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
       propertyPath: m_Name
       value: Resource_Bricks_Prefab (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
@@ -23194,6 +23637,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Metal_Prefab (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 8744540041367294407, guid: e379ae3755eeef145b362b379ef07b4e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8744540041367294426, guid: e379ae3755eeef145b362b379ef07b4e, type: 3}
       propertyPath: m_RootOrder
       value: 163
@@ -23465,6 +23912,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Bricks_Prefab (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
 --- !u!4 &1338411831 stripped
@@ -23569,6 +24020,10 @@ PrefabInstance:
     - target: {fileID: 3861235524361432609, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
       propertyPath: m_Name
       value: Resource_Tires_Prefab (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3861235524361432609, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3861235524361432622, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
       propertyPath: m_RootOrder
@@ -23846,6 +24301,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Bricks_Prefab (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
 --- !u!4 &1388711604 stripped
@@ -23863,6 +24322,10 @@ PrefabInstance:
     - target: {fileID: 7331043161936365906, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
       propertyPath: m_Name
       value: Resource_Tree_Prefab (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7331043161936365906, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7331043161936365909, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
       propertyPath: m_RootOrder
@@ -24098,6 +24561,10 @@ PrefabInstance:
     - target: {fileID: 7331043161936365906, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
       propertyPath: m_Name
       value: Resource_Tree_Prefab (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7331043161936365906, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7331043161936365909, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
       propertyPath: m_RootOrder
@@ -24358,6 +24825,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Metal_Prefab (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 8744540041367294407, guid: e379ae3755eeef145b362b379ef07b4e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8744540041367294426, guid: e379ae3755eeef145b362b379ef07b4e, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -24419,6 +24890,10 @@ PrefabInstance:
     - target: {fileID: 7331043161936365906, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
       propertyPath: m_Name
       value: Resource_Tree_Prefab (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7331043161936365906, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7331043161936365909, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
       propertyPath: m_RootOrder
@@ -24656,6 +25131,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Tires_Prefab (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3861235524361432609, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3861235524361432622, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
       propertyPath: m_RootOrder
       value: 58
@@ -24848,6 +25327,10 @@ PrefabInstance:
     - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
       propertyPath: m_Name
       value: Resource_Bricks_Prefab (42)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
@@ -25369,6 +25852,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Tree_Prefab (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7331043161936365906, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7331043161936365909, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
       propertyPath: m_RootOrder
       value: 125
@@ -25649,6 +26136,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Bricks_Prefab
       objectReference: {fileID: 0}
+    - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
 --- !u!4 &1490456230 stripped
@@ -25797,6 +26288,10 @@ PrefabInstance:
     - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
       propertyPath: m_Name
       value: Resource_Bricks_Prefab (41)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
@@ -26083,6 +26578,10 @@ PrefabInstance:
     - target: {fileID: 5877802036488486268, guid: 8e89119e649f28f41b788a38086a83ed, type: 3}
       propertyPath: m_Name
       value: Resource_Wood_Planks_Prefab (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5877802036488486268, guid: 8e89119e649f28f41b788a38086a83ed, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e89119e649f28f41b788a38086a83ed, type: 3}
@@ -26703,6 +27202,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Wood_Planks_Prefab (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 5877802036488486268, guid: 8e89119e649f28f41b788a38086a83ed, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e89119e649f28f41b788a38086a83ed, type: 3}
 --- !u!4 &1531738821 stripped
@@ -27015,6 +27518,10 @@ PrefabInstance:
     - target: {fileID: 8683965631063477359, guid: da9b146353d35ea4f97a862b1c2a0acb, type: 3}
       propertyPath: m_Name
       value: Resource_Wire_Prefab (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683965631063477359, guid: da9b146353d35ea4f97a862b1c2a0acb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da9b146353d35ea4f97a862b1c2a0acb, type: 3}
@@ -27747,6 +28254,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Tires_Prefab (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 3861235524361432609, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3861235524361432622, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
       propertyPath: m_RootOrder
       value: 54
@@ -27940,6 +28451,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Bricks_Prefab (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
 --- !u!4 &1586119941 stripped
@@ -28005,6 +28520,10 @@ PrefabInstance:
     - target: {fileID: 5877802036488486268, guid: 8e89119e649f28f41b788a38086a83ed, type: 3}
       propertyPath: m_Name
       value: Resource_Wood_Planks_Prefab (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5877802036488486268, guid: 8e89119e649f28f41b788a38086a83ed, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e89119e649f28f41b788a38086a83ed, type: 3}
@@ -28186,6 +28705,10 @@ PrefabInstance:
     - target: {fileID: 3861235524361432609, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
       propertyPath: m_Name
       value: Resource_Tires_Prefab (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3861235524361432609, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3861235524361432622, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
       propertyPath: m_RootOrder
@@ -28379,6 +28902,10 @@ PrefabInstance:
     - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
       propertyPath: m_Name
       value: Resource_Bricks_Prefab (43)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
@@ -28632,7 +29159,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 52.599976, y: -60.7}
+  m_AnchoredPosition: {x: 47.700012, y: -60.7}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1635286256
@@ -28682,8 +29209,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -28732,6 +29259,87 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1635286254}
   m_CullTransparentMesh: 1
+--- !u!1001 &1643026090
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4267220213359896129, guid: efd3051f84c2064458188699d0503e95, type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4267220213359896129, guid: efd3051f84c2064458188699d0503e95, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4267220213359896129, guid: efd3051f84c2064458188699d0503e95, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4267220213359896129, guid: efd3051f84c2064458188699d0503e95, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4267220213359896129, guid: efd3051f84c2064458188699d0503e95, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4267220213359896129, guid: efd3051f84c2064458188699d0503e95, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4267220213359896129, guid: efd3051f84c2064458188699d0503e95, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4267220213359896129, guid: efd3051f84c2064458188699d0503e95, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4267220213359896129, guid: efd3051f84c2064458188699d0503e95, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4267220213359896129, guid: efd3051f84c2064458188699d0503e95, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4267220213359896129, guid: efd3051f84c2064458188699d0503e95, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4267220213359896142, guid: efd3051f84c2064458188699d0503e95, type: 3}
+      propertyPath: waveList.Array.data[0].spawnAmount
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4267220213359896142, guid: efd3051f84c2064458188699d0503e95, type: 3}
+      propertyPath: waveList.Array.data[1].spawnAmount
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4267220213359896142, guid: efd3051f84c2064458188699d0503e95, type: 3}
+      propertyPath: waveList.Array.data[2].spawnAmount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4267220213359896143, guid: efd3051f84c2064458188699d0503e95, type: 3}
+      propertyPath: m_Name
+      value: SpawnPointContainer
+      objectReference: {fileID: 0}
+    - target: {fileID: 7603249745461759844, guid: efd3051f84c2064458188699d0503e95, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -93.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7603249746612708991, guid: efd3051f84c2064458188699d0503e95, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 88.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7603249746665331718, guid: efd3051f84c2064458188699d0503e95, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 89.6
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: efd3051f84c2064458188699d0503e95, type: 3}
 --- !u!1 &1644274164
 GameObject:
   m_ObjectHideFlags: 0
@@ -28767,7 +29375,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 37.999954, y: -56.1}
+  m_AnchoredPosition: {x: 42.69995, y: -56.1}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1644274166
@@ -28817,8 +29425,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -29295,6 +29903,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Metal_Prefab (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8744540041367294407, guid: e379ae3755eeef145b362b379ef07b4e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8744540041367294426, guid: e379ae3755eeef145b362b379ef07b4e, type: 3}
       propertyPath: m_RootOrder
       value: 70
@@ -29532,6 +30144,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Bricks_Prefab (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
 --- !u!4 &1697056233 stripped
@@ -29549,6 +30165,10 @@ PrefabInstance:
     - target: {fileID: 7331043161936365906, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
       propertyPath: m_Name
       value: Resource_Tree_Prefab (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7331043161936365906, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7331043161936365909, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
       propertyPath: m_RootOrder
@@ -29619,6 +30239,10 @@ PrefabInstance:
     - target: {fileID: 8744540041367294407, guid: e379ae3755eeef145b362b379ef07b4e, type: 3}
       propertyPath: m_Name
       value: Resource_Metal_Prefab (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8744540041367294407, guid: e379ae3755eeef145b362b379ef07b4e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8744540041367294426, guid: e379ae3755eeef145b362b379ef07b4e, type: 3}
       propertyPath: m_RootOrder
@@ -29851,6 +30475,10 @@ PrefabInstance:
     - target: {fileID: 3861235524361432609, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
       propertyPath: m_Name
       value: Resource_Tires_Prefab (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3861235524361432609, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3861235524361432622, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
       propertyPath: m_RootOrder
@@ -30303,6 +30931,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Tires_Prefab (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 3861235524361432609, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3861235524361432622, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
       propertyPath: m_RootOrder
       value: 55
@@ -30369,6 +31001,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Metal_Prefab (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8744540041367294407, guid: e379ae3755eeef145b362b379ef07b4e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8744540041367294426, guid: e379ae3755eeef145b362b379ef07b4e, type: 3}
       propertyPath: m_RootOrder
       value: 71
@@ -30430,6 +31066,10 @@ PrefabInstance:
     - target: {fileID: 7331043161936365906, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
       propertyPath: m_Name
       value: Resource_Tree_Prefab (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7331043161936365906, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7331043161936365909, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
       propertyPath: m_RootOrder
@@ -30679,6 +31319,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Metal_Prefab (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 8744540041367294407, guid: e379ae3755eeef145b362b379ef07b4e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8744540041367294426, guid: e379ae3755eeef145b362b379ef07b4e, type: 3}
       propertyPath: m_RootOrder
       value: 158
@@ -30879,6 +31523,10 @@ PrefabInstance:
     - target: {fileID: 3861235524361432609, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
       propertyPath: m_Name
       value: Resource_Tires_Prefab (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3861235524361432609, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3861235524361432622, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
       propertyPath: m_RootOrder
@@ -31111,6 +31759,10 @@ PrefabInstance:
     - target: {fileID: 3861235524361432609, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
       propertyPath: m_Name
       value: Resource_Tires_Prefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 3861235524361432609, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3861235524361432622, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
       propertyPath: m_RootOrder
@@ -31362,6 +32014,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Bricks_Prefab (45)
       objectReference: {fileID: 0}
+    - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
 --- !u!4 &1841136949 stripped
@@ -31383,6 +32039,10 @@ PrefabInstance:
     - target: {fileID: 3861235524361432609, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
       propertyPath: m_Name
       value: Resource_Tires_Prefab (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3861235524361432609, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3861235524361432622, guid: 8bb22f2d2e720b74f808b241e1a7a471, type: 3}
       propertyPath: m_RootOrder
@@ -31699,6 +32359,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Metal_Prefab (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 8744540041367294407, guid: e379ae3755eeef145b362b379ef07b4e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8744540041367294426, guid: e379ae3755eeef145b362b379ef07b4e, type: 3}
       propertyPath: m_RootOrder
       value: 137
@@ -31809,6 +32473,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Wood_Planks_Prefab (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5877802036488486268, guid: 8e89119e649f28f41b788a38086a83ed, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e89119e649f28f41b788a38086a83ed, type: 3}
 --- !u!4 &1869944416 stripped
@@ -31875,6 +32543,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Bricks_Prefab
       objectReference: {fileID: 0}
+    - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
 --- !u!1001 &1876093754
@@ -31935,6 +32607,10 @@ PrefabInstance:
     - target: {fileID: 8683965631063477359, guid: da9b146353d35ea4f97a862b1c2a0acb, type: 3}
       propertyPath: m_Name
       value: Resource_Wire_Prefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683965631063477359, guid: da9b146353d35ea4f97a862b1c2a0acb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da9b146353d35ea4f97a862b1c2a0acb, type: 3}
@@ -32037,6 +32713,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Tree_Prefab (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 7331043161936365906, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7331043161936365909, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
       propertyPath: m_RootOrder
       value: 112
@@ -32118,6 +32798,10 @@ PrefabInstance:
     - target: {fileID: 8744540041367294407, guid: e379ae3755eeef145b362b379ef07b4e, type: 3}
       propertyPath: m_Name
       value: Resource_Metal_Prefab (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8744540041367294407, guid: e379ae3755eeef145b362b379ef07b4e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8744540041367294426, guid: e379ae3755eeef145b362b379ef07b4e, type: 3}
       propertyPath: m_RootOrder
@@ -32258,6 +32942,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Wire_Prefab (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 8683965631063477359, guid: da9b146353d35ea4f97a862b1c2a0acb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da9b146353d35ea4f97a862b1c2a0acb, type: 3}
 --- !u!4 &1926512482 stripped
@@ -32362,6 +33050,10 @@ PrefabInstance:
     - target: {fileID: 8744540041367294407, guid: e379ae3755eeef145b362b379ef07b4e, type: 3}
       propertyPath: m_Name
       value: Resource_Metal_Prefab (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8744540041367294407, guid: e379ae3755eeef145b362b379ef07b4e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8744540041367294426, guid: e379ae3755eeef145b362b379ef07b4e, type: 3}
       propertyPath: m_RootOrder
@@ -32639,6 +33331,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Wood_Planks_Prefab (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5877802036488486268, guid: 8e89119e649f28f41b788a38086a83ed, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e89119e649f28f41b788a38086a83ed, type: 3}
 --- !u!4 &1956604649 stripped
@@ -32660,6 +33356,10 @@ PrefabInstance:
     - target: {fileID: 8744540041367294407, guid: e379ae3755eeef145b362b379ef07b4e, type: 3}
       propertyPath: m_Name
       value: Resource_Metal_Prefab (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8744540041367294407, guid: e379ae3755eeef145b362b379ef07b4e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8744540041367294426, guid: e379ae3755eeef145b362b379ef07b4e, type: 3}
       propertyPath: m_RootOrder
@@ -33159,6 +33859,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Wire_Prefab (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 8683965631063477359, guid: da9b146353d35ea4f97a862b1c2a0acb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da9b146353d35ea4f97a862b1c2a0acb, type: 3}
 --- !u!4 &1963777391 stripped
@@ -33224,6 +33928,10 @@ PrefabInstance:
     - target: {fileID: 8683965631063477359, guid: da9b146353d35ea4f97a862b1c2a0acb, type: 3}
       propertyPath: m_Name
       value: Resource_Wire_Prefab (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683965631063477359, guid: da9b146353d35ea4f97a862b1c2a0acb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da9b146353d35ea4f97a862b1c2a0acb, type: 3}
@@ -33502,6 +34210,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Tree_Prefab (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 7331043161936365906, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7331043161936365909, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
       propertyPath: m_RootOrder
       value: 157
@@ -33619,6 +34331,10 @@ PrefabInstance:
     - target: {fileID: 7331043161936365906, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
       propertyPath: m_Name
       value: Resource_Tree_Prefab (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7331043161936365906, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7331043161936365909, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
       propertyPath: m_RootOrder
@@ -33868,6 +34584,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Metal_Prefab (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 8744540041367294407, guid: e379ae3755eeef145b362b379ef07b4e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8744540041367294426, guid: e379ae3755eeef145b362b379ef07b4e, type: 3}
       propertyPath: m_RootOrder
       value: 134
@@ -33954,7 +34674,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 51, y: -3.2}
+  m_AnchoredPosition: {x: 47.7, y: -3.2}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2028188157
@@ -34004,8 +34724,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -34112,6 +34832,10 @@ PrefabInstance:
     - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
       propertyPath: m_Name
       value: Resource_Bricks_Prefab (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
@@ -34301,6 +35025,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Metal_Prefab (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 8744540041367294407, guid: e379ae3755eeef145b362b379ef07b4e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8744540041367294426, guid: e379ae3755eeef145b362b379ef07b4e, type: 3}
       propertyPath: m_RootOrder
       value: 139
@@ -34410,6 +35138,10 @@ PrefabInstance:
     - target: {fileID: 8683965631063477359, guid: da9b146353d35ea4f97a862b1c2a0acb, type: 3}
       propertyPath: m_Name
       value: Resource_Wire_Prefab (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683965631063477359, guid: da9b146353d35ea4f97a862b1c2a0acb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da9b146353d35ea4f97a862b1c2a0acb, type: 3}
@@ -34648,6 +35380,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Bricks_Prefab (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
 --- !u!4 &2059671736 stripped
@@ -34854,6 +35590,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Bricks_Prefab (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 5497363952620350521, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88040938e949ffc46a003b9209ce83a5, type: 3}
 --- !u!4 &2075934447 stripped
@@ -34959,6 +35699,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Metal_Prefab (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 8744540041367294407, guid: e379ae3755eeef145b362b379ef07b4e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8744540041367294426, guid: e379ae3755eeef145b362b379ef07b4e, type: 3}
       propertyPath: m_RootOrder
       value: 161
@@ -35019,6 +35763,10 @@ PrefabInstance:
     - target: {fileID: 8744540041367294407, guid: e379ae3755eeef145b362b379ef07b4e, type: 3}
       propertyPath: m_Name
       value: Resource_Metal_Prefab (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8744540041367294407, guid: e379ae3755eeef145b362b379ef07b4e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8744540041367294426, guid: e379ae3755eeef145b362b379ef07b4e, type: 3}
       propertyPath: m_RootOrder
@@ -35106,7 +35854,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 35.000015, y: -56.1}
+  m_AnchoredPosition: {x: 38.4, y: -56.1}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2093518983
@@ -35156,8 +35904,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -36122,6 +36870,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Wood_Planks_Prefab (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 5877802036488486268, guid: 8e89119e649f28f41b788a38086a83ed, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e89119e649f28f41b788a38086a83ed, type: 3}
 --- !u!4 &2124528375 stripped
@@ -36164,7 +36916,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 38, y: -3.2}
+  m_AnchoredPosition: {x: 42.7, y: -3.2}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2129608965
@@ -36214,8 +36966,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -36323,6 +37075,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Resource_Wood_Planks_Prefab (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5877802036488486268, guid: 8e89119e649f28f41b788a38086a83ed, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e89119e649f28f41b788a38086a83ed, type: 3}
 --- !u!4 &2137083216 stripped
@@ -36340,6 +37096,10 @@ PrefabInstance:
     - target: {fileID: 7331043161936365906, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
       propertyPath: m_Name
       value: Resource_Tree_Prefab (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7331043161936365906, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7331043161936365909, guid: 379ea86ae553f7a4ca047b125db70370, type: 3}
       propertyPath: m_RootOrder
