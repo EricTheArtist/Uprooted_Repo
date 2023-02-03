@@ -233,11 +233,12 @@ public class Workbench : MonoBehaviour
     void upgrade_house()
     {
         //for first upgrade the house is spawned into the scene using the building system
-        if (upgrade_phase == 0)
+        if (upgrade_phase == 1)
         {
+            Debug.Log("First purchase");
             Building_System.BuildNewHouse();
         }
-        else if (upgrade_phase > 0)
+        else if (upgrade_phase > 1)
         {
             house_prefab_active();
         }

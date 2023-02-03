@@ -36,6 +36,7 @@ public class PlacableObject : MonoBehaviour
 
     public Vector3 GetStartPosition()
     {
+        CalculateSizeInCells();
         return transform.TransformPoint(Vertices[0]);
     }
     void Start()
@@ -59,10 +60,12 @@ public class PlacableObject : MonoBehaviour
 
     public virtual void Place()
     {
-        transform.parent = null; // detach from player
         ObjectDrag drag = gameObject.GetComponent<ObjectDrag>();
         Destroy(drag);
+        transform.parent = null; // detach from player
         Placed = true;
+        Collider Col = gameObject.GetComponent<Collider>();
+        Col.isTrigger = false;
 
         // invoke events of placement (Build timer etc);
     }

@@ -51,10 +51,11 @@ public class BuildingSystem : MonoBehaviour
         {
             if (CanBePlaced(objectToPlace))
             {
-                objectToPlace.Place();
+                
                 Vector3Int start = gridLayout.WorldToCell(objectToPlace.GetStartPosition());
                 TakeArea(start, objectToPlace.Size);
                 UI_ConfirmHousePos.SetActive(false);
+                objectToPlace.Place();
             }
             else
             {
