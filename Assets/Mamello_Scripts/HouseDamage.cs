@@ -9,6 +9,8 @@ public class HouseDamage : MonoBehaviour
     [SerializeField] private int damageAmount = 10;
     [SerializeField] private Transform damagePopup;
     [SerializeField] private Transform housePosition;
+
+    public bool PlayerHouse = false;
    
 
     // Start is called before the first frame update
@@ -22,8 +24,13 @@ public class HouseDamage : MonoBehaviour
     {
         if (houseHealth <= 0)
         {
+            
+            if (PlayerHouse == true)
+            {
+                SceneManager.LoadScene(3);
+            }
+            
             Destroy(gameObject);
-            SceneManager.LoadScene(3);
 
         }
     }

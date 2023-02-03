@@ -12,9 +12,11 @@ GameObject:
   - component: {fileID: 7450209443777405731}
   - component: {fileID: 7450209443777405728}
   - component: {fileID: 2430758545124022456}
+  - component: {fileID: 2422497227713307149}
+  - component: {fileID: 7524164557579502780}
   m_Layer: 0
   m_Name: House_06
-  m_TagString: Untagged
+  m_TagString: HousePrefab
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -97,3 +99,36 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.5, y: 3.8, z: 3.4}
   m_Center: {x: -0.25, y: 1.9, z: -0.099999964}
+--- !u!54 &2422497227713307149
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7450209443777405729}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &7524164557579502780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7450209443777405729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7567626c158ff3943a58f50cdc0b16ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  houseHealth: 100
+  damageAmount: 10
+  damagePopup: {fileID: 5438206811543804025, guid: 3341273ba9088f14d8530abde795858b, type: 3}
+  housePosition: {fileID: 0}
+  PlayerHouse: 0

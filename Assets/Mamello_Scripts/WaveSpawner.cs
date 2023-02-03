@@ -42,6 +42,7 @@ public class WaveSpawner : MonoBehaviour
         //waiting before restarting countdown for next wave (waiting after spawned all ants as per ant count)
         if (spawnState == SpawnState.WAITING)
         {
+            Debug.Log("Found Ants =" + IsAntAlive());
             //checking if ants still alive
             if (!IsAntAlive()) //not processing
             {

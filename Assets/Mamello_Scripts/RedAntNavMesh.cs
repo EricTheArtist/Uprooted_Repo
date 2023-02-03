@@ -15,7 +15,9 @@ public class RedAntNavMesh : MonoBehaviour
     /*[SerializeField] private GameObject[] taggedHouses;
     [SerializeField] private GameObject[] totalHouses;
     public Transform[] totalHouses;*/
-
+    public GameObject[] HouseTransformsArray;
+    public GameObject Closesthouse;
+    
     private void Awake()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
@@ -23,18 +25,51 @@ public class RedAntNavMesh : MonoBehaviour
 
     private void Start()
     {
-        GameObject temphouse = GameObject.FindWithTag("HousePrefab");
-        moveTarget = temphouse.GetComponent<Transform>();
-        /* taggedHouses  = GameObject.FindGameObjectsWithTag("HousePrefab");*/
+        //GameObject temphouse = GameObject.FindWithTag("HousePrefab");
+        //moveTarget = temphouse.GetComponent<Transform>();
+
+        HouseTransformsArray  = GameObject.FindGameObjectsWithTag("HousePrefab");
+        compareDistances();
+        moveTarget = Closesthouse.transform;
         navMeshAgent.destination = moveTarget.position;
 
+    }
+
+    void compareDistances()
+    {
+        float lowestDist = Mathf.Infinity;
+        Vector3 pos = transform.position;
+
+        for (int i = 0; i < HouseTransformsArray.Length; i++)
+        {
+
+            float dist = Vector3.Distance(HouseTransformsArray[i].transform.position, pos);
+
+            if (dist < lowestDist)
+            {
+                lowestDist = dist;
+                Closesthouse = HouseTransformsArray[i];
+            }
+
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
         //making RedAnt movetowards target
-        navMeshAgent.destination = moveTarget.position;
+        if(moveTarget!= null)
+        {
+            navMeshAgent.destination = moveTarget.position;
+        }
+        else if(moveTarget == null)
+        {
+            HouseTransformsArray = GameObject.FindGameObjectsWithTag("HousePrefab");
+            compareDistances();
+            moveTarget = Closesthouse.transform;
+            navMeshAgent.destination = moveTarget.position;
+        }
+        
         //FindClosestTarget();
     }
 
