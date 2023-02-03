@@ -42,4 +42,9 @@ public class WelcomeSceneManager : MonoBehaviour
         Application.Quit();
 
     }
+
+    public void GameOver()
+    {
+        SceneManager.LoadScene(3);
+    }
 }
