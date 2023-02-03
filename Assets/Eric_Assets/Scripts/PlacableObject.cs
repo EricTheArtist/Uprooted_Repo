@@ -8,16 +8,24 @@ public class PlacableObject : MonoBehaviour
     public Vector3Int Size { get; private set; }
 
     private Vector3[] Vertices;
+    public Transform[] Corners;
     // Start is called before the first frame update
+    //public BoxCollider b;
 
     private void GetColliderVertexPositionsLocal()
     {
         BoxCollider b = gameObject.GetComponent<BoxCollider>();
         Vertices = new Vector3[4];
-        Vertices[0] = b.center + new Vector3(-b.size.x, -b.size.z) * 0.5f;
-        Vertices[1] = b.center + new Vector3(b.size.x, -b.size.z) * 0.5f;
-        Vertices[2] = b.center + new Vector3(b.size.x, b.size.z) * 0.5f;
-        Vertices[3] = b.center + new Vector3(-b.size.x, b.size.z) * 0.5f;
+        Vertices[0] = Corners[0].localPosition; //b.center + new Vector3(-b.size.x, -b.size.z) * 0.5f;
+        Vertices[1] = Corners[1].localPosition;//b.center + new Vector3(b.size.x, -b.size.z) * 0.5f;
+        Vertices[2] = Corners[2].localPosition;//b.center + new Vector3(b.size.x, b.size.z) * 0.5f;
+        Vertices[3] = Corners[3].localPosition;//b.center + new Vector3(-b.size.x, b.size.z) * 0.5f;
+
+        Debug.DrawRay(Vertices[0], Vertices[1], Color.red, 100, false);
+        Debug.DrawRay(Vertices[1], Vertices[2], Color.red, 100, false);
+        Debug.DrawRay(Vertices[2], Vertices[3], Color.red, 100, false);
+        Debug.DrawRay(Vertices[3], Vertices[0], Color.red, 100, false);
+        Debug.DrawRay(b.center, b.center+ new Vector3(0,10,0), Color.blue, 100, false);
     }
 
     private void CalculateSizeInCells()
@@ -36,6 +44,7 @@ public class PlacableObject : MonoBehaviour
 
     public Vector3 GetStartPosition()
     {
+        GetColliderVertexPositionsLocal();
         CalculateSizeInCells();
         return transform.TransformPoint(Vertices[0]);
     }
