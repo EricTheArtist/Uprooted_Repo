@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 420841382260452949}
   - component: {fileID: 420841382260452948}
   - component: {fileID: 835966575715754821}
+  - component: {fileID: 148227371342132757}
+  - component: {fileID: -831708111491679200}
   m_Layer: 0
   m_Name: Red_Ant
   m_TagString: RedAnt
@@ -96,7 +98,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.2
-  m_Speed: 3.5
+  m_Speed: 10
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -133,4 +135,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac06306ac66098046a8ea606540c7769, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifetimeCountdown: 5
+  lifetimeCountdown: 30
+--- !u!136 &148227371342132757
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 420841382260452937}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.25
+  m_Height: 1.6
+  m_Direction: 1
+  m_Center: {x: 0.05, y: 0.8, z: -0.15}
+--- !u!54 &-831708111491679200
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 420841382260452937}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
