@@ -5,14 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class HouseDamage : MonoBehaviour
 {
-    [SerializeField] private int houseHealth = 100;
+    [SerializeField] private float houseHealth = 100;
     [SerializeField] private int damageAmount = 10;
     [SerializeField] private Transform damagePopup;
     [SerializeField] private Transform housePosition;
 
     public bool PlayerHouse = false;
     public GameObject HPBar;
-    private float starthealth;
+    public float starthealth;
 
     // Start is called before the first frame update
     void Start()
@@ -45,12 +45,25 @@ public class HouseDamage : MonoBehaviour
             Transform damagePopupTransform = Instantiate(damagePopup, housePosition.position, Quaternion.identity);
             //referenicing DamagePopup script/class to get SetUp func
             DamagePopup damagePopupClass = damagePopupTransform.transform.GetComponent<DamagePopup>();
-            damagePopupClass.SetUp(houseHealth);
+            damagePopupClass.SetUp(damageAmount);
+            if (PlayerHouse == true)
+            {
+                UpdateHPBar();
+            }
         }
-        if (PlayerHouse == true)
-        {
-            HPBar = GameObject.FindGameObjectWithTag("HPBAR");
-            HPBar.transform.localScale = new Vector3(houseHealth/starthealth,1,1);
-        }
+
+    }
+
+    public void MaxHouseHealth()
+    {
+        houseHealth = starthealth;
+        UpdateHPBar();
+
+    }
+
+    void UpdateHPBar()
+    {
+        HPBar = GameObject.FindGameObjectWithTag("HPBAR");
+        HPBar.transform.localScale = new Vector3(houseHealth/starthealth, 1, 1);
     }
 }

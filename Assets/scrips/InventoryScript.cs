@@ -20,6 +20,15 @@ public class InventoryScript : MonoBehaviour
     public GameObject metal_icon;
     public GameObject tire_icon;
     public GameObject wire_icon;
+
+    [Header("Inventory Carry Items")]
+    public GameObject wood_Item;
+    public GameObject brick_Item;
+    public GameObject metal_Item;
+    public GameObject tire_Item;
+    public GameObject wire_Item;
+
+
     private void Start()
     {
         deactivate_icon();
@@ -43,6 +52,7 @@ public class InventoryScript : MonoBehaviour
             current_item = wood_prefab;
             deactivate_icon();
             wood_icon.SetActive(true);
+            wood_Item.SetActive(true);
         }
         if(item_to_add.name== metal_pickup_name+"(Clone)")
         {
@@ -50,6 +60,7 @@ public class InventoryScript : MonoBehaviour
             current_item = metal_prefab;
             deactivate_icon();
             metal_icon.SetActive(true);
+            metal_Item.SetActive(true);
 
         }
         if (item_to_add.name == brick_pickup_name+"(Clone)")
@@ -58,6 +69,7 @@ public class InventoryScript : MonoBehaviour
             current_item = brick_prefab;
             deactivate_icon();
             brick_icon.SetActive(true);
+            brick_Item.SetActive(true);
 
         }
         if (item_to_add.name == tire_pickup_name+"(Clone)")
@@ -66,6 +78,7 @@ public class InventoryScript : MonoBehaviour
             current_item = tire_prefab;
             deactivate_icon();
             tire_icon.SetActive(true);
+            tire_Item.SetActive(true);
 
         }
         if (item_to_add.name == wire_pickup_name+"(Clone)")
@@ -74,6 +87,7 @@ public class InventoryScript : MonoBehaviour
             current_item = wire_prefab;
             deactivate_icon();
             wire_icon.SetActive(true);
+            wire_Item.SetActive(true);
 
         }
 
@@ -124,6 +138,12 @@ public class InventoryScript : MonoBehaviour
         brick_icon.SetActive(false);
         tire_icon.SetActive(false);
         wire_icon.SetActive(false);
+
+        wood_Item.SetActive(false);
+        metal_Item.SetActive(false);
+        brick_Item.SetActive(false);
+        tire_Item.SetActive(false);
+        wire_Item.SetActive(false);
 
     }
 }

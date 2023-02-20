@@ -115,6 +115,7 @@ public class BuildingSystem : MonoBehaviour
 
         GameObject obj = Instantiate(prefab, position, Quaternion.identity); // spawns house at given positio
         Work_Bench.house_parent = obj.transform.Find("House_Models").gameObject; // sets the public variable for the house parent in the workbench
+        Work_Bench.House = obj;
         obj.transform.parent = Player.transform; // sets the parent of the house as the player
         objectToPlace = obj.GetComponent<PlacableObject>(); // gets regrence to placeable object script that is attached to the house prefab
         obj.AddComponent<ObjectDrag>(); // adds the object drag script to the house prefab

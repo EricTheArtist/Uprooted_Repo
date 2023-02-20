@@ -12,7 +12,9 @@ public class Workbench : MonoBehaviour
     public int wood_count, metal_count, brick_count, tire_count, wire_count;
     //WorkBench Upgrades Stats
     [Header("Upgrade Stats")]
-    public GameObject house_parent; //this variable also gets set during runtime when a new house is spawnd in using the BuilsingSystem script
+    public GameObject house_parent;
+    public GameObject House;        //these variables also gets set during runtime when a new house is spawnd in using the BuilsingSystem script
+
     public int upgrade_phase = 1;
     public bool can_upgrade = false;
     public int upgrade_wood_amount;
@@ -228,6 +230,8 @@ public class Workbench : MonoBehaviour
         }
         house_parent.transform.GetChild(upgrade_phase).gameObject.SetActive(true);
         required_upgrade_update();
+        HouseDamage HDmg = House.GetComponent<HouseDamage>(); //resets house HP to max
+        HDmg.MaxHouseHealth();
     }
     //button function used to upgrade the house | changes phase and uses up resources
     void upgrade_house()
