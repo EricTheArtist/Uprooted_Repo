@@ -32,6 +32,9 @@ public class PlayerController : MonoBehaviour
     [Header("References")]
     CameraMode camera_mode;
 
+    [Header("Animation")]
+    public Animator C_Animator;
+
     void Start()
     {
         camera_mode = this.GetComponent<CameraMode>();
@@ -53,6 +56,15 @@ public class PlayerController : MonoBehaviour
         speed_control();
         //maintains and checks ground movement
         ground_control();
+        //Debug.Log("Velocity: " + rb.velocity.magnitude);
+        if (rb.velocity.magnitude > 5)
+        {
+            C_Animator.SetBool("Running", true);
+        }
+        else
+        {
+            C_Animator.SetBool("Running", false);
+        }
     }
 
     void get_inputs()
@@ -65,14 +77,37 @@ public class PlayerController : MonoBehaviour
         //jump key input
         if(Input.GetKey(jump_key) && is_grounded && can_jump)
         {
+            C_Animator.SetTrigger("Jump"); // trigger for jump animation -Eric
             can_jump = false;
-            jump_control();
-            Invoke(nameof(reste_jump), jump_cooldown);
+
+            if (rb.velocity.magnitude > 5) // Check to delay jump for static jump animation
+            {
+                jump_control();
+                Invoke(nameof(reste_jump), jump_cooldown);
+
+            }
+            else
+            {
+                StartCoroutine(StandingJumpDelay());
+            }
+
         }
     }
 
+    IEnumerator StandingJumpDelay()
+    {
+
+        //yield on a new YieldInstruction that waits for 5 seconds.
+        yield return new WaitForSeconds(1f);
+
+        jump_control();
+        Invoke(nameof(reste_jump), jump_cooldown);
+    }
+
+
     void move_player()
     {
+
         //calculating the movement direction
         move_direction = orientation.forward * vert_input + orientation.right * hori_input;
         //adding the force in the direction we calculated above to move the player while grounded
@@ -113,6 +148,7 @@ public class PlayerController : MonoBehaviour
     }
     void jump_control()
     {
+            
         //Debug.Log("Is jumping");
         //reset the y value so that player always jumps at the same height
         rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
@@ -124,5 +160,7 @@ public class PlayerController : MonoBehaviour
     {
         can_jump = true;
     }
+
+
 
 }
