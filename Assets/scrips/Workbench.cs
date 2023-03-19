@@ -7,6 +7,7 @@ public class Workbench : MonoBehaviour
 {
     public GameObject player_model;
     InventoryScript inventory;
+    Script_UIManagement S_UIM;
     public BuildingSystem Building_System;
     //WorkBench Storages
     public int wood_count, metal_count, brick_count, tire_count, wire_count;
@@ -44,7 +45,7 @@ public class Workbench : MonoBehaviour
     public TextMeshProUGUI T_WireUpgrade;
 
     // updates the UI to reflect variables of workbench
-    private void UpdateUI()
+   /* private void UpdateUI()
     {
         T_WoodStorage.text = wood_count.ToString();
         T_MetalStorage.text = metal_count.ToString();
@@ -58,13 +59,20 @@ public class Workbench : MonoBehaviour
         T_TireUpgrade.text = upgrade_tire_amount.ToString();
         T_WireUpgrade.text = upgrade_wire_amount.ToString();
     }
+   */
     private void Start()
     {
+        player_model = GameObject.FindGameObjectWithTag("Player");
         can_upgrade = false;
         upgrade_phase = 1;
         required_upgrade_update();
         inventory = player_model.GetComponentInParent<InventoryScript>();
-        UpdateUI(); // initial setting of UI display values
+        S_UIM.UpdateResourcesUI(); //UpdateUI(); // initial setting of UI display values
+    }
+
+    public void SetUIManager(Script_UIManagement Ref)
+    {
+        S_UIM = Ref;
     }
     private void Update()
     {
@@ -104,7 +112,7 @@ public class Workbench : MonoBehaviour
                 add_item(inventory.current_item);
                 inventory.remove_item(inventory.current_item);
             }
-            UpdateUI(); // refresh resouce display in UI
+            S_UIM.UpdateResourcesUI(); //UpdateUI(); // refresh resouce display in UI
         }
     }
     //add the resource to the work bench
@@ -141,7 +149,7 @@ public class Workbench : MonoBehaviour
         tire_count -= upgrade_tire_amount;
         wire_count -= upgrade_wire_amount;
 
-        UpdateUI(); //refreshes UI to reflect new values
+        S_UIM.UpdateResourcesUI(); //UpdateUI(); //refreshes UI to reflect new values
     }
     //updates the required ammounts based on the current house phase
     void required_upgrade_update()
@@ -250,7 +258,7 @@ public class Workbench : MonoBehaviour
         remove_item();
         upgrade_phase++;
         required_upgrade_update();
-        UpdateUI();
+        S_UIM.UpdateResourcesUI(); //UpdateUI();
         //change house prefab
 
     }

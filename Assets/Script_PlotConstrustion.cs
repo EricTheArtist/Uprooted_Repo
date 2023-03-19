@@ -8,6 +8,10 @@ public class Script_PlotConstrustion : MonoBehaviour
     public Color CanPlace;
     public Color NotPlace;
     public bool ClearToPlace;
+
+    public GameObject HouseAndBenchPrefab;
+    public Script_UIManagement SUIM;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,8 +21,15 @@ public class Script_PlotConstrustion : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.E) && ClearToPlace == true)
+        {
+            Instantiate(HouseAndBenchPrefab);
+            SUIM.SetWorkbenchRefrence();
+            Destroy(gameObject);
+        } 
     }
+
+
     private void OnTriggerStay(Collider other)
     {
         if(other.tag != "Player")
