@@ -8,6 +8,9 @@ public class Script_UIManagement : MonoBehaviour
     public GameObject WorkBenchREF;
     Workbench WB;
 
+    public GameObject ConfirmLocationprompt;
+    public GameObject UpgradeHousePrompt;
+
     [Header("Resources")]
     public TextMeshProUGUI T_WoodStorage;
     public TextMeshProUGUI T_MetalStorage;
@@ -15,11 +18,26 @@ public class Script_UIManagement : MonoBehaviour
     public TextMeshProUGUI T_TireStorage;
     public TextMeshProUGUI T_WireStorage;
 
-    public TextMeshProUGUI T_WoodUpgrade;
-    public TextMeshProUGUI T_MetalUpgrade;
-    public TextMeshProUGUI T_BrickUpgrade;
-    public TextMeshProUGUI T_TireUpgrade;
-    public TextMeshProUGUI T_WireUpgrade;
+    public GameObject WoodBar;
+    public GameObject MetalBar;
+    public GameObject BrickBar;
+    public GameObject TireBar;
+    public GameObject WireBar;
+
+
+
+    public void toggleConfirmLocationPrompt()
+    {
+        if (ConfirmLocationprompt.activeInHierarchy)
+        {
+            ConfirmLocationprompt.SetActive(false);
+        }
+        else
+        {
+            ConfirmLocationprompt.SetActive(true);
+        }
+    }
+
 
     // Start is called before the first frame update
     void Start()
@@ -41,17 +59,70 @@ public class Script_UIManagement : MonoBehaviour
 
     public void UpdateResourcesUI()
     {
-        T_WoodStorage.text = WB.wood_count.ToString();
-        T_MetalStorage.text = WB.metal_count.ToString();
-        T_BrickStorage.text = WB.brick_count.ToString();
-        T_TireStorage.text = WB.tire_count.ToString();
-        T_WireStorage.text = WB.wire_count.ToString();
+        bool CR = WB.check_resources();
+        if (CR == true)
+        {
+            UpgradeHousePrompt.SetActive(true);
+        }
+        else
+        {
+            UpgradeHousePrompt.SetActive(false);
+        }
 
-        T_WoodUpgrade.text = WB.upgrade_wood_amount.ToString();
-        T_MetalUpgrade.text = WB.upgrade_metal_amount.ToString();
-        T_BrickUpgrade.text = WB.upgrade_brick_amount.ToString();
-        T_TireUpgrade.text = WB.upgrade_tire_amount.ToString();
-        T_WireUpgrade.text = WB.upgrade_wire_amount.ToString();
+        T_WoodStorage.text = WB.wood_count.ToString() + "/" + WB.upgrade_wood_amount.ToString();
+        T_MetalStorage.text = WB.metal_count.ToString() + "/" + WB.upgrade_metal_amount.ToString();
+        T_BrickStorage.text = WB.brick_count.ToString() + "/" + WB.upgrade_brick_amount.ToString();
+        T_TireStorage.text = WB.tire_count.ToString() + "/" + WB.upgrade_tire_amount.ToString();
+        T_WireStorage.text = WB.wire_count.ToString() + "/" + WB.upgrade_wire_amount.ToString();
+
+        if(WB.upgrade_wood_amount!= 0)
+        {
+            float scale = ((float)WB.wood_count / (float)WB.upgrade_wood_amount);
+            if(scale <= 1)
+            {
+                WoodBar.transform.localScale = new Vector3(scale, 1, 1);
+            }
+            
+        }
+        if (WB.upgrade_metal_amount != 0)
+        {
+            float scale = ((float)WB.metal_count / (float)WB.upgrade_metal_amount);
+            if(scale <= 1)
+            {
+                MetalBar.transform.localScale = new Vector3(scale, 1, 1);
+            }
+            
+        }
+        if (WB.upgrade_brick_amount != 0)
+        {
+            float scale = ((float)WB.brick_count / (float)WB.upgrade_brick_amount);
+            if (scale <= 1)
+            {
+                BrickBar.transform.localScale = new Vector3(scale, 1, 1);
+            }
+            
+        }
+        if (WB.upgrade_tire_amount != 0)
+        {
+            float scale = ((float)WB.tire_count / (float)WB.upgrade_tire_amount);
+            if (scale <= 1)
+            {
+                TireBar.transform.localScale = new Vector3(scale, 1, 1);
+            }
+            
+        }
+        if (WB.upgrade_wire_amount != 0)
+        {
+            float scale = ((float)WB.wire_count / (float)WB.upgrade_wire_amount);
+            if (scale <= 1)
+            {
+                WireBar.transform.localScale = new Vector3(scale, 1, 1);
+            }
+            
+        }
+        
+        
+        
     }
 
 

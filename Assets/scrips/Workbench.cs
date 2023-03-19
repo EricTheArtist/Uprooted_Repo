@@ -8,13 +8,14 @@ public class Workbench : MonoBehaviour
     public GameObject player_model;
     InventoryScript inventory;
     Script_UIManagement S_UIM;
-    public BuildingSystem Building_System;
+    //public BuildingSystem Building_System;
     //WorkBench Storages
     public int wood_count, metal_count, brick_count, tire_count, wire_count;
     //WorkBench Upgrades Stats
     [Header("Upgrade Stats")]
     public GameObject house_parent;
-    public GameObject House;        //these variables also gets set during runtime when a new house is spawnd in using the BuilsingSystem script
+    public GameObject House;
+    public ParticleSystem UpgradeEffect;
 
     public int upgrade_phase = 1;
     public bool can_upgrade = false;
@@ -31,35 +32,7 @@ public class Workbench : MonoBehaviour
     public string tire_pickup_name;
     public string wire_pickup_name;
 
-    [Header("UI Elements")]
-    public TextMeshProUGUI T_WoodStorage;
-    public TextMeshProUGUI T_MetalStorage;
-    public TextMeshProUGUI T_BrickStorage;
-    public TextMeshProUGUI T_TireStorage;
-    public TextMeshProUGUI T_WireStorage;
 
-    public TextMeshProUGUI T_WoodUpgrade;
-    public TextMeshProUGUI T_MetalUpgrade;
-    public TextMeshProUGUI T_BrickUpgrade;
-    public TextMeshProUGUI T_TireUpgrade;
-    public TextMeshProUGUI T_WireUpgrade;
-
-    // updates the UI to reflect variables of workbench
-   /* private void UpdateUI()
-    {
-        T_WoodStorage.text = wood_count.ToString();
-        T_MetalStorage.text = metal_count.ToString();
-        T_BrickStorage.text = brick_count.ToString();
-        T_TireStorage.text = tire_count.ToString();
-        T_WireStorage.text = wire_count.ToString();
-
-        T_WoodUpgrade.text = upgrade_wood_amount.ToString();
-        T_MetalUpgrade.text = upgrade_metal_amount.ToString();
-        T_BrickUpgrade.text = upgrade_brick_amount.ToString();
-        T_TireUpgrade.text = upgrade_tire_amount.ToString();
-        T_WireUpgrade.text = upgrade_wire_amount.ToString();
-    }
-   */
     private void Start()
     {
         player_model = GameObject.FindGameObjectWithTag("Player");
@@ -67,7 +40,7 @@ public class Workbench : MonoBehaviour
         upgrade_phase = 1;
         required_upgrade_update();
         inventory = player_model.GetComponentInParent<InventoryScript>();
-        S_UIM.UpdateResourcesUI(); //UpdateUI(); // initial setting of UI display values
+        S_UIM.UpdateResourcesUI();// initial setting of UI display values
     }
 
     public void SetUIManager(Script_UIManagement Ref)
@@ -76,18 +49,11 @@ public class Workbench : MonoBehaviour
     }
     private void Update()
     {
-        //required_upgrade_update();
-       /* if (check_resources())
-        {
-            can_upgrade = true;
-        }
-        else { can_upgrade = false; }*/
-        //test case for house upgrade:
-        //comment out after testing is complete
+
         if (Input.GetKeyUp(KeyCode.U) && check_resources())
         {
             upgrade_house();
-
+            UpgradeEffect.Play();
         }
     }
     //a button function used to call the upgrad function if the player can upgrade the house
@@ -157,21 +123,13 @@ public class Workbench : MonoBehaviour
         Debug.Log("called on start");
         if (upgrade_phase == 1)
         {
-            upgrade_wood_amount = 1;
-            upgrade_brick_amount = 0;
-            upgrade_metal_amount = 0;
-            upgrade_tire_amount = 0;
-            upgrade_wire_amount = 1;
-        }
-        if (upgrade_phase == 2)
-        {
             upgrade_wood_amount = 5;
             upgrade_brick_amount = 1;
             upgrade_metal_amount = 5;
             upgrade_tire_amount = 0;
             upgrade_wire_amount = 1;
         }
-        if (upgrade_phase == 3)
+        if (upgrade_phase == 2)
         {
             upgrade_wood_amount = 6;
             upgrade_brick_amount = 2;
@@ -179,7 +137,7 @@ public class Workbench : MonoBehaviour
             upgrade_tire_amount = 1;
             upgrade_wire_amount = 2;
         }
-        if (upgrade_phase == 4)
+        if (upgrade_phase == 3)
         {
             upgrade_wood_amount = 8;
             upgrade_brick_amount = 2;
@@ -187,7 +145,7 @@ public class Workbench : MonoBehaviour
             upgrade_tire_amount = 2;
             upgrade_wire_amount = 4;
         }
-        if (upgrade_phase == 5)
+        if (upgrade_phase == 4)
         {
             upgrade_wood_amount = 10;
             upgrade_brick_amount = 10;
@@ -195,13 +153,21 @@ public class Workbench : MonoBehaviour
             upgrade_tire_amount = 0;
             upgrade_wire_amount = 5;
         }
-        if (upgrade_phase == 6)
+        if (upgrade_phase == 5)
         {
             upgrade_wood_amount = 15;
             upgrade_brick_amount = 15;
             upgrade_metal_amount = 5;
             upgrade_tire_amount = 0;
             upgrade_wire_amount = 7;
+        }
+        if (upgrade_phase == 6)
+        {
+            upgrade_wood_amount = 20;
+            upgrade_brick_amount = 20;
+            upgrade_metal_amount = 10;
+            upgrade_tire_amount = 0;
+            upgrade_wire_amount = 10;
         }
         if (upgrade_phase == 7)
         {
@@ -214,7 +180,7 @@ public class Workbench : MonoBehaviour
 
     }
     //checks if the required resources are enough to upgrade the house's current state
-    bool check_resources()
+    public bool check_resources()
     {
         bool upgrade = false;
         //check wood count
@@ -244,17 +210,7 @@ public class Workbench : MonoBehaviour
     //button function used to upgrade the house | changes phase and uses up resources
     void upgrade_house()
     {
-        //for first upgrade the house is spawned into the scene using the building system
-        if (upgrade_phase == 1)
-        {
-            Debug.Log("First purchase");
-            Building_System.BuildNewHouse();
-            //house_prefab_active();
-        }
-        else if (upgrade_phase > 1)
-        {
-            house_prefab_active();
-        }
+        house_prefab_active();
         remove_item();
         upgrade_phase++;
         required_upgrade_update();
