@@ -132,3 +132,7 @@ MonoBehaviour:
   damagePopup: {fileID: 5438206811543804025, guid: 3341273ba9088f14d8530abde795858b, type: 3}
   housePosition: {fileID: 0}
   PlayerHouse: 0
+  HPBar: {fileID: 0}
+  starthealth: 0
+  Housecollider: {fileID: 0}
+  Prefab_Rubble: {fileID: 3427151432096357368, guid: 82d79bef7eb93dc4095221d5c0edd56b, type: 3}

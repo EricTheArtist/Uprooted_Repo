@@ -1223,7 +1223,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5959697739366083614}
-  - component: {fileID: 4971470596849582024}
   - component: {fileID: 4836083739945402414}
   - component: {fileID: 1171686670412095197}
   - component: {fileID: 3844516598370986585}
@@ -1250,23 +1249,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4971470596849582024
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8427199270212759128}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4efe5cf08ae22814f8f1085df670fd2f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Corners:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!65 &4836083739945402414
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1315,3 +1297,5 @@ MonoBehaviour:
   PlayerHouse: 1
   HPBar: {fileID: 0}
   starthealth: 0
+  Housecollider: {fileID: 0}
+  Prefab_Rubble: {fileID: 3427151432096357368, guid: 82d79bef7eb93dc4095221d5c0edd56b, type: 3}

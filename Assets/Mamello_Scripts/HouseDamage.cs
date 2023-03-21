@@ -15,6 +15,7 @@ public class HouseDamage : MonoBehaviour
     public float starthealth;
 
     public BoxCollider Housecollider;
+    public GameObject Prefab_Rubble;
 
     // Start is called before the first frame update
     void Start()
@@ -44,10 +45,15 @@ public class HouseDamage : MonoBehaviour
             {
                 SceneManager.LoadScene(3);
             }
-            
+            SpawnRubble();
             Destroy(gameObject);
 
         }
+    }
+
+    void SpawnRubble()
+    {
+        Instantiate(Prefab_Rubble);
     }
 
     private void OnCollisionEnter(Collision collision)

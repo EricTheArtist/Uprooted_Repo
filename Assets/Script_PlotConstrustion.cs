@@ -25,9 +25,9 @@ public class Script_PlotConstrustion : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E) && ClearToPlace == true)
         {
             House = Instantiate(HouseAndBenchPrefab); //spawns house and workbench
-            House.transform.position = this.transform.position; //sents the homestead loaction to this location 
+            House.transform.position = this.transform.position; //sents the house/workbench loaction to this location 
             SUIM.SetWorkbenchRefrence(); // tells UI to find the workbench we spawned
-            SUIM.toggleConfirmLocationPrompt(); //turns of placement propmt
+            SUIM.toggleConfirmLocationPrompt(); //tells UI manager to turn off the placement propmt
             Destroy(gameObject);
         } 
     }

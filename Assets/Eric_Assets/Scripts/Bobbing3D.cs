@@ -24,7 +24,7 @@ public class Bobbing3D : MonoBehaviour
             transform.position.z);
         if (spinning == true)
         {
-            transform.Rotate(0, 0.5f, 0);
+            transform.Rotate(0, 0.1f, 0);
         }
     }
 }

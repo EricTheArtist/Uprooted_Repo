@@ -100,6 +100,8 @@ MonoBehaviour:
   resource_health: 7
   drop_prefab: {fileID: 7331043161936365906, guid: cee389c3b2ed5a14ca9a7b1d5427de0c, type: 3}
   can_mine: 0
+  ItemsDropped: 4
+  ItemSpread: 1
 --- !u!65 &8949168778897888406
 BoxCollider:
   m_ObjectHideFlags: 0
