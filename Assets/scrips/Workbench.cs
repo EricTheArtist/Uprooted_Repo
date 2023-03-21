@@ -8,7 +8,7 @@ public class Workbench : MonoBehaviour
     public GameObject player_model;
     InventoryScript inventory;
     Script_UIManagement S_UIM;
-    //public BuildingSystem Building_System;
+    public HouseDamage PlayerHouseDamage;
     //WorkBench Storages
     public int wood_count, metal_count, brick_count, tire_count, wire_count;
     //WorkBench Upgrades Stats
@@ -18,7 +18,7 @@ public class Workbench : MonoBehaviour
     public ParticleSystem UpgradeEffect;
 
     public int upgrade_phase = 1;
-    public bool can_upgrade = false;
+    public bool upgrade_range = false;
     public int upgrade_wood_amount;
     public int upgrade_metal_amount;
     public int upgrade_brick_amount;
@@ -36,7 +36,7 @@ public class Workbench : MonoBehaviour
     private void Start()
     {
         player_model = GameObject.FindGameObjectWithTag("Player");
-        can_upgrade = false;
+        upgrade_range = false;
         upgrade_phase = 1;
         required_upgrade_update();
         inventory = player_model.GetComponentInParent<InventoryScript>();
@@ -50,14 +50,14 @@ public class Workbench : MonoBehaviour
     private void Update()
     {
 
-        if (Input.GetKeyUp(KeyCode.U) && check_resources())
+        if (Input.GetKeyUp(KeyCode.U) && check_resources() && upgrade_range == true)
         {
             upgrade_house();
             UpgradeEffect.Play();
         }
     }
     //a button function used to call the upgrad function if the player can upgrade the house
-    public void call_upgrade_house()
+    /*public void call_upgrade_house()
     {
         if (can_upgrade && upgrade_phase!=7)
         {
@@ -67,18 +67,26 @@ public class Workbench : MonoBehaviour
         {
             return;
         }
-    }
+    }*/
     //calls the add function 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject == player_model)
         {
+            upgrade_range = true; //
             if (inventory.current_item != null)
             {
                 add_item(inventory.current_item);
                 inventory.remove_item(inventory.current_item);
             }
             S_UIM.UpdateResourcesUI(); //UpdateUI(); // refresh resouce display in UI
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject == player_model)
+        {
+            upgrade_range = false;
         }
     }
     //add the resource to the work bench
@@ -214,8 +222,9 @@ public class Workbench : MonoBehaviour
         remove_item();
         upgrade_phase++;
         required_upgrade_update();
-        S_UIM.UpdateResourcesUI(); //UpdateUI();
+        S_UIM.UpdateResourcesUI(); //Update UI
         //change house prefab
+        PlayerHouseDamage.enablehousedamge();
 
     }
     

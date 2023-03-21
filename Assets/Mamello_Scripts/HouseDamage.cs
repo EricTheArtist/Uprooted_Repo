@@ -14,11 +14,24 @@ public class HouseDamage : MonoBehaviour
     public GameObject HPBar;
     public float starthealth;
 
+    public BoxCollider Housecollider;
+
     // Start is called before the first frame update
     void Start()
     {
         housePosition = gameObject.GetComponent<Transform>();
         starthealth = houseHealth;
+        
+        if (PlayerHouse == true)
+        {
+            Housecollider.enabled = false;
+            HPBar = GameObject.FindGameObjectWithTag("HPBAR");
+        }
+    }
+
+    public void enablehousedamge()
+    {
+        Housecollider.enabled = true;
     }
 
     // Update is called once per frame
@@ -63,7 +76,7 @@ public class HouseDamage : MonoBehaviour
 
     void UpdateHPBar()
     {
-        HPBar = GameObject.FindGameObjectWithTag("HPBAR");
-        HPBar.transform.localScale = new Vector3(houseHealth/starthealth, 1, 1);
+        
+        HPBar.transform.localScale = new Vector3((float)houseHealth/ (float)starthealth, 1, 1);
     }
 }

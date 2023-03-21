@@ -54,20 +54,24 @@ public class Script_UIManagement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (WB != null)
+        {
+           bool CR = WB.check_resources();
+            if (CR == true && WB.upgrade_range == true)
+            {
+                UpgradeHousePrompt.SetActive(true);
+            }
+            else
+            {
+                UpgradeHousePrompt.SetActive(false);
+            }
+        }
+
     }
 
     public void UpdateResourcesUI()
     {
-        bool CR = WB.check_resources();
-        if (CR == true)
-        {
-            UpgradeHousePrompt.SetActive(true);
-        }
-        else
-        {
-            UpgradeHousePrompt.SetActive(false);
-        }
+
 
         T_WoodStorage.text = WB.wood_count.ToString() + "/" + WB.upgrade_wood_amount.ToString();
         T_MetalStorage.text = WB.metal_count.ToString() + "/" + WB.upgrade_metal_amount.ToString();
