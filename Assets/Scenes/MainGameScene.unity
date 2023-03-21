@@ -32041,7 +32041,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4267220213359896142, guid: efd3051f84c2064458188699d0503e95, type: 3}
       propertyPath: waveList.Array.data[0].spawnAmount
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4267220213359896142, guid: efd3051f84c2064458188699d0503e95, type: 3}
       propertyPath: waveList.Array.data[1].spawnAmount

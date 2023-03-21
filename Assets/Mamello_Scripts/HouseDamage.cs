@@ -45,15 +45,11 @@ public class HouseDamage : MonoBehaviour
             {
                 SceneManager.LoadScene(3);
             }
-            SpawnRubble();
+            GameObject Rubble = Instantiate(Prefab_Rubble);
+            Rubble.transform.position = this.transform.position;
             Destroy(gameObject);
 
         }
-    }
-
-    void SpawnRubble()
-    {
-        Instantiate(Prefab_Rubble);
     }
 
     private void OnCollisionEnter(Collision collision)
