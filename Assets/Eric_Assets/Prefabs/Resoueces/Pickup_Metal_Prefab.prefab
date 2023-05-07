@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7447808940735951655}
   m_Layer: 0
   m_Name: Pickup_Metal_Prefab
-  m_TagString: Untagged
+  m_TagString: Pickup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -124,4 +124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1875cf6306fa6643a033d5eb5e606f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spinning: 1
+  bobbingSpeed: 1
   floatStrength: 0.3
+  addedheight: 0.5

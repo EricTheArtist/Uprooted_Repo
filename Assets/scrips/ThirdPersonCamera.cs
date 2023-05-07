@@ -22,6 +22,7 @@ public class ThirdPersonCamera : MonoBehaviour
     [Header("TestVariables")]
     public int switch_camera_testflag = 0;
 
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +35,8 @@ public class ThirdPersonCamera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+
         if (Input.GetKeyUp(KeyCode.T))
         {
             switch_cam_testfunction();

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bb37a5e4810a7744a6b9d1f88712c1d, type: 3}
+  m_Name: Item_MetalSheet
+  m_EditorClassIdentifier: 
+  type: 0
+  itemName: MetalSheet
+  itemPerSlot: 4
+  icon: {fileID: 21300000, guid: b9b1a15ecafd9f243a6eee500c6421e3, type: 3}
+  prefab: {fileID: 8744540041367294407, guid: 7836fa724e34fa6429624a769430ce24, type: 3}
+  itemInformation: Metal is great for roofs and can also be used for walls.
